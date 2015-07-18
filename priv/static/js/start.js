@@ -1,10 +1,9 @@
 var Start = React.createClass({
     render: function() {
+        var rawMarkup = marked("#MarkDown test.   ``console.log('code test');``");
         return (
             <div className="test">
-            <h2>
-            REACT WORLD
-            </h2>
+            <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
             </div>
         );
     }
