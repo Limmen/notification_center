@@ -6,3 +6,12 @@ body
 {
     font-family: 'Ubuntu', sans-serif;        
 }
+.align_center
+{
+    text-align: center;
+}
+.title
+{
+    font-weight: bold;
+    font-size: 40px;
+}
