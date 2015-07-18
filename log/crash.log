@@ -17,4 +17,10 @@ GET /index/static/js/vendor/modernizr-2.8.3.min.js [notification_center] 404 19m
 GET /index/static/css/normalize.css [notification_center] 404 3ms2015-07-18 10:52:50 =ERROR REPORT====
 GET /index/js/plugins.js [notification_center] 404 15ms2015-07-18 10:52:50 =ERROR REPORT====
 GET /index/js/main.js [notification_center] 404 15ms2015-07-18 11:01:06 =ERROR REPORT====
-GET /chicago-boss.png [notification_center] 404 15ms
+GET /chicago-boss.png [notification_center] 404 15ms2015-07-18 19:17:56 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-18 19:17:56 =ERROR REPORT====
+GET /index/create [notification_center] 500 225ms2015-07-18 19:19:41 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-18 19:19:41 =ERROR REPORT====
+GET /index/create [notification_center] 500 7ms

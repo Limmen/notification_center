@@ -60,9 +60,24 @@ var Start = React.createClass({
             <div className="row">
             <div className="col-sm-1"></div>
             <div className="col-sm-5">
-             <h2> Add new event </h2>
-            <input type='text' class="form-control" id='datetimepicker2' />
+
+            <h2> Add new event </h2>
+            <form role="form" action="/index/create">
+            
+            <div className="form-group">
+            <label for="descr">Description:</label>
+            <input type="text" className="form-control" id="descr"/>
             </div>
+            
+            <div className="form-group">
+            <label for="datetimepicker2">Date:</label>
+            <input type='text' className="form-control" id='datetimepicker2' />
+            </div>
+            <button type="submit" className="btn btn-default">Submit</button>
+            </form>
+            
+            </div>
+            
             <div className="col-sm-5">
             <div className="list-group">
             <h2> Upcoming events </h2>
