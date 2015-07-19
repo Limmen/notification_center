@@ -29,11 +29,11 @@ var Start = React.createClass({
     dateT: function(){
         var that = this;
         $(function () {
-            $('#datetimepicker2').datepicker({
+            $('#datetimepicker2').datetimepicker({
                 locale: 'sv',
-                onSelect: function (data) {
-                    that.setState({inputDate: data});
-                }
+//                onSelect: function (data) {
+  //                  that.setState({inputDate: data});
+    //            }
             });
         });
     },
@@ -54,7 +54,7 @@ var Start = React.createClass({
 
     newEvent: function(){
         var descr = this.state.inputDescr;
-        var dateTime = this.state.inputDate;
+        var dateTime = $("#datetimepicker2").find("input").val();
         console.log("Clicked " + descr + "  " + dateTime);
         $.post( "/index/create",{description : descr, date: dateTime}, function( data ) {
             console.log("posted!");
@@ -92,8 +92,14 @@ var Start = React.createClass({
             </div>
             
             <div className="form-group">
-            <label for="datetimepicker2">Date:</label>
-            <input type='text' className="form-control" id='datetimepicker2'   onChange={this.dateChange}/>
+            <label for="datetimepicker3">Date:</label>
+            <div className='input-group date' id='datetimepicker2'>
+            <input type='text' className="form-control" id="datetimepicker3" />
+            <span className="input-group-addon">
+            <span className="glyphicon glyphicon-calendar"></span>
+            </span>
+            </div>
+{/*            <input type='text' className="form-control" id='datetimepicker2'   onChange={this.dateChange}/>  */}
             </div>
             <button type="submit" className="btn btn-default" onClick={this.newEvent}>Submit</button> 
             
