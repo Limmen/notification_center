@@ -46,9 +46,12 @@ var Start = React.createClass({
     getInitialState: function() { 
         return{
             notifications : [{description : "laundry", time : 10}, {description :  "laundry", time : 10}, {description : "laundry", time : 10}, {description : "laundry", time : 10}],
+            songs: [{name: "TestSong", artist: "testArtist"}, {name: "TestSong", artist: "testArtist"}, {name: "TestSong", artist: "testArtist"}, {name: "TestSong", artist: "testArtist"}],
             timer: 0,
             inputDescr:"",
             inputDate: "",
+            inputTitle:"",
+            inputSongs:""
         };
     },
 
@@ -64,6 +67,12 @@ var Start = React.createClass({
     descrChange: function(e){
         console.log("DescrChange");
         this.setState({inputDescr : e.target.value});
+    },
+    titleChange: function(e){
+        this.setState({inputTitle : e.target.value});
+    },
+    songsChange: function(e){
+        this.setState({inputSongs : e.target.value});
     },
     dateChange: function(e){
         console.log("DateChange");
@@ -85,6 +94,11 @@ var Start = React.createClass({
             <div className="col-sm-5">
 
             <h2> Add new event </h2>
+
+            <div className="form-group">
+            <label for="not_title">Title:</label>
+            <input type="text" className="form-control" id="not_title" value={this.state.inputTitle} onChange={this.titleChange}/>
+            </div>
             
             <div className="form-group">
             <label for="descr">Description:</label>
@@ -101,6 +115,16 @@ var Start = React.createClass({
             </div>
 {/*            <input type='text' className="form-control" id='datetimepicker2'   onChange={this.dateChange}/>  */}
             </div>
+            <div className="form-group">
+            <label for="songs">Song:</label>
+            <select className="form-control" id="songs" value={this.state.inputSongs} onChange={this.songsChange}>
+            {this.state.songs.map(function(song) {
+                var name = song.name;
+                var artist = song.artist;
+                return <option>{name} - {artist}</option>
+            }.bind(this))}
+            </select>
+            </div>            
             <button type="submit" className="btn btn-default" onClick={this.newEvent}>Submit</button> 
             
             </div>

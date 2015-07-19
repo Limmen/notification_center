@@ -10,15 +10,11 @@ start('GET', [])->
 %%     Notifications = boss_db:find(start, []).
 %%     {json, Notifications}.
 
-create('GET', [])->
+notifications('GET', [])->
     io:format(" ~n ~n Post/GET request!  ~n ~n"),
     Notifications = boss_db:find(notification, []),
- %   Notification = boss_db:find("notification-1"),
-%    boss_db:delete("notification-1"),
     io:format("~n ~n Noti: ~p  ~n ~n", [Notifications]),
-%    {json, [{lollee, "Hello get for a post :()"}]};
- %   {json, Notifications};
-    {json, Notifications};
+    {json, Notifications}.
 
 create('POST', [])->
     io:format(" ~n ~n Post request!  ~n ~n"),
@@ -29,3 +25,9 @@ create('POST', [])->
     io:format(" ~n ~n DateTime:  ~p, Description: ~p ~n ~n",[DateTime,Description]),
     {redirect, [{action, "start"}]}.
 
+
+songs('GET', [])->
+    Songs = boss_db:find(song, []),
+    io:format("~n ~n Noti: ~p  ~n ~n", [Songs]),
+%    {json, [{"title", "test"}]}.
+    {json, Songs}.   

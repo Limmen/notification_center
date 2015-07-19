@@ -1,0 +1,2 @@
+-module(song, [Id, Name, Artist]).
+-compile(export_all).

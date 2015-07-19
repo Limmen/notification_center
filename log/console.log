@@ -3336,3 +3336,634 @@
 []
 2015-07-19 14:39:54.383 [notice] <0.310.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
 2015-07-19 14:39:54.384 [info] <0.310.0> GET /index/create [notification_center] 200 3ms
+2015-07-19 14:50:19.711 [notice] <0.312.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 14:50:19.712 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 14:50:19.725 [info] <0.312.0> Route: "/index/create"Url
+[]
+2015-07-19 14:50:19.727 [notice] <0.312.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 14:50:19.728 [info] <0.312.0> GET /index/create [notification_center] 200 16ms
+2015-07-19 14:50:20.730 [notice] <0.314.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 14:50:20.731 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 14:50:20.731 [info] <0.314.0> Route: "/index/create"Url
+[]
+2015-07-19 14:50:20.733 [notice] <0.314.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 14:50:20.734 [info] <0.314.0> GET /index/create [notification_center] 200 3ms
+2015-07-19 15:06:37.548 [notice] <0.316.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:06:37.549 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:06:37.549 [info] <0.316.0> Route: "/index/start"Url
+[]
+2015-07-19 15:06:37.551 [notice] <0.316.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:06:37.586 [info] <0.316.0> GET /index/start [notification_center] 200 37ms
+2015-07-19 15:06:38.092 [notice] <0.317.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:06:38.092 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:06:38.093 [info] <0.317.0> Route: "/index/start"Url
+[]
+2015-07-19 15:06:38.095 [notice] <0.317.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:06:38.096 [info] <0.317.0> GET /index/start [notification_center] 200 4ms
+2015-07-19 15:06:40.146 [notice] <0.318.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:06:40.147 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:06:40.147 [info] <0.318.0> Route: "/index/start"Url
+[]
+2015-07-19 15:06:40.149 [notice] <0.318.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:06:40.150 [info] <0.318.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 15:35:24.468 [notice] <0.339.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:35:24.468 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:35:24.469 [info] <0.339.0> Route: "/index/start"Url
+[]
+2015-07-19 15:35:24.489 [notice] <0.339.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/model/song.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:35:24.489 [info] <0.339.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},song},{',',{1,13}},{'[',{1,15}},{var,{1,16},'Id'},{',',{1,18}},{var,{1,20},'Name'},{',',{1,24}},{var,{1,26},'Artist'},{']',{1,32}},{')',{1,33}},{dot,{1,34}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{3,1}}]
+2015-07-19 15:35:24.492 [notice] <0.339.0>@boss_record_compiler:make_generated_forms:225 Module "song" Parameters ['Id','Name','Artist'] Attributes[{compile,export_all}]
+2015-07-19 15:35:24.504 [notice] <0.339.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:35:24.505 [info] <0.339.0> GET /index/start [notification_center] 200 36ms
+2015-07-19 15:35:25.690 [notice] <0.345.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:35:25.690 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:35:25.691 [info] <0.345.0> Route: "/index/start"Url
+[]
+2015-07-19 15:35:25.692 [notice] <0.345.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:35:25.693 [info] <0.345.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 15:38:22.334 [notice] <0.355.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:38:22.335 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:38:22.335 [info] <0.355.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:38:22.336 [info] <0.355.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:38:22.336 [notice] <0.355.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:38:22.340 [error] <0.355.0>@boss_load:compile_and_accumulate_errors:258 Compile Error, "src/controller/notification_center_index_controller.erl" -> [{"/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl",[{19,erl_parse,"head mismatch"}]}]
+2015-07-19 15:38:22.340 [info] <0.355.0> GET /index/songs [notification_center] 200 5ms
+2015-07-19 15:38:36.353 [notice] <0.362.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:38:36.354 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:38:36.354 [info] <0.362.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:38:36.355 [info] <0.362.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:38:36.355 [notice] <0.362.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:38:36.366 [notice] <0.362.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:38:36.398 [error] <0.362.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:function_clause Stacktrace: [{boss_json,json_data1,[[{song,"song-2","TestName","TestArtist"},
+                       {song,"song-3","TestName2","TestArtist2"},
+                       {song,"song-4","TestName3","TestArtist3"}],
+                      ["notification"],
+                      []],[{file,"src/boss/boss_json.erl"},{line,31}]},{boss_json,encode,2,[{file,"src/boss/boss_json.erl"},{line,16}]},{boss_web_controller_render,process_action_result,4,[{file,"src/boss/boss_web_controller_render.erl"},{line,178}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-07-19 15:38:37.427 [notice] <0.365.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:38:37.427 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:38:37.427 [info] <0.365.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:38:37.429 [notice] <0.365.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:38:37.430 [error] <0.365.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:function_clause Stacktrace: [{boss_json,json_data1,[[{song,"song-2","TestName","TestArtist"},
+                       {song,"song-3","TestName2","TestArtist2"},
+                       {song,"song-4","TestName3","TestArtist3"}],
+                      ["notification"],
+                      []],[{file,"src/boss/boss_json.erl"},{line,31}]},{boss_json,encode,2,[{file,"src/boss/boss_json.erl"},{line,16}]},{boss_web_controller_render,process_action_result,4,[{file,"src/boss/boss_web_controller_render.erl"},{line,178}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-07-19 15:39:21.034 [notice] <0.367.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:39:21.035 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:39:21.035 [info] <0.367.0> Route: "/index/notifications"Url
+[]
+2015-07-19 15:39:21.037 [notice] <0.367.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:39:21.038 [info] <0.367.0> GET /index/notifications [notification_center] 200 2ms
+2015-07-19 15:40:05.151 [notice] <0.374.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:40:05.152 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:40:05.152 [info] <0.374.0> Route: "/index/start"Url
+[]
+2015-07-19 15:40:05.155 [notice] <0.374.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:40:05.157 [info] <0.374.0> GET /index/start [notification_center] 200 4ms
+2015-07-19 15:40:05.686 [notice] <0.375.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:40:05.686 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:40:05.686 [info] <0.375.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:40:05.688 [notice] <0.375.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:40:05.689 [error] <0.375.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:function_clause Stacktrace: [{boss_json,json_data1,[[{song,"song-2","TestName","TestArtist"},
+                       {song,"song-3","TestName2","TestArtist2"},
+                       {song,"song-4","TestName3","TestArtist3"}],
+                      ["notification"],
+                      []],[{file,"src/boss/boss_json.erl"},{line,31}]},{boss_json,encode,2,[{file,"src/boss/boss_json.erl"},{line,16}]},{boss_web_controller_render,process_action_result,4,[{file,"src/boss/boss_web_controller_render.erl"},{line,178}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-07-19 15:41:43.788 [notice] <0.383.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:41:43.789 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:41:43.789 [info] <0.383.0> Route: "/index/start"Url
+[]
+2015-07-19 15:41:43.791 [notice] <0.383.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:41:43.793 [info] <0.383.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 15:41:44.010 [notice] <0.384.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:41:44.010 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:41:44.011 [info] <0.384.0> Route: "/index/start"Url
+[]
+2015-07-19 15:41:44.014 [notice] <0.384.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:41:44.016 [info] <0.384.0> GET /index/start [notification_center] 200 6ms
+2015-07-19 15:41:44.951 [notice] <0.385.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:41:44.952 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:41:44.952 [info] <0.385.0> Route: "/index/start"Url
+[]
+2015-07-19 15:41:44.954 [notice] <0.385.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:41:44.955 [info] <0.385.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 15:41:47.427 [notice] <0.393.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:41:47.428 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:41:47.429 [info] <0.393.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:41:47.430 [notice] <0.393.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:41:47.431 [error] <0.393.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:function_clause Stacktrace: [{boss_json,json_data1,[[{song,"song-2","TestName","TestArtist"},
+                       {song,"song-3","TestName2","TestArtist2"},
+                       {song,"song-4","TestName3","TestArtist3"}],
+                      ["notification"],
+                      []],[{file,"src/boss/boss_json.erl"},{line,31}]},{boss_json,encode,2,[{file,"src/boss/boss_json.erl"},{line,16}]},{boss_web_controller_render,process_action_result,4,[{file,"src/boss/boss_web_controller_render.erl"},{line,178}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-07-19 15:41:48.470 [notice] <0.394.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:41:48.471 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:41:48.471 [info] <0.394.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:41:48.473 [notice] <0.394.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:41:48.474 [error] <0.394.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:function_clause Stacktrace: [{boss_json,json_data1,[[{song,"song-2","TestName","TestArtist"},
+                       {song,"song-3","TestName2","TestArtist2"},
+                       {song,"song-4","TestName3","TestArtist3"}],
+                      ["notification"],
+                      []],[{file,"src/boss/boss_json.erl"},{line,31}]},{boss_json,encode,2,[{file,"src/boss/boss_json.erl"},{line,16}]},{boss_web_controller_render,process_action_result,4,[{file,"src/boss/boss_web_controller_render.erl"},{line,178}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-07-19 15:42:39.176 [notice] <0.397.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:42:39.176 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:42:39.177 [info] <0.397.0> Route: "/index/notifications"Url
+[]
+2015-07-19 15:42:39.178 [notice] <0.397.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:42:39.179 [info] <0.397.0> GET /index/notifications [notification_center] 200 2ms
+2015-07-19 15:43:36.389 [notice] <0.404.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:43:36.389 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:43:36.389 [info] <0.404.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:43:36.390 [info] <0.404.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:43:36.390 [notice] <0.404.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:43:36.396 [error] <0.404.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/notification_center_index_controller.erl" -> [{"/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl",[{32,erl_lint,illegal_expr}]}]
+2015-07-19 15:43:36.396 [info] <0.404.0> GET /index/songs [notification_center] 200 7ms
+2015-07-19 15:43:36.556 [notice] <0.405.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:43:36.557 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:43:36.557 [info] <0.405.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:43:36.558 [info] <0.405.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:43:36.558 [notice] <0.405.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:43:36.566 [error] <0.405.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/notification_center_index_controller.erl" -> [{"/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl",[{32,erl_lint,illegal_expr}]}]
+2015-07-19 15:43:36.566 [info] <0.405.0> GET /index/songs [notification_center] 200 9ms
+2015-07-19 15:43:38.473 [notice] <0.406.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:43:38.474 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:43:38.474 [info] <0.406.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:43:38.475 [info] <0.406.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:43:38.475 [notice] <0.406.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:43:38.481 [error] <0.406.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/notification_center_index_controller.erl" -> [{"/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl",[{32,erl_lint,illegal_expr}]}]
+2015-07-19 15:43:38.481 [info] <0.406.0> GET /index/songs [notification_center] 200 7ms
+2015-07-19 15:43:56.068 [notice] <0.415.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:43:56.069 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:43:56.069 [info] <0.415.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:43:56.070 [info] <0.415.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:43:56.070 [notice] <0.415.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:43:56.076 [error] <0.415.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/notification_center_index_controller.erl" -> [{"/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl",[{32,erl_lint,illegal_expr}]}]
+2015-07-19 15:43:56.077 [info] <0.415.0> GET /index/songs [notification_center] 200 7ms
+2015-07-19 15:43:56.794 [notice] <0.418.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:43:56.795 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:43:56.795 [info] <0.418.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:43:56.796 [info] <0.418.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:43:56.797 [notice] <0.418.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:43:56.802 [error] <0.418.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/notification_center_index_controller.erl" -> [{"/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl",[{32,erl_lint,illegal_expr}]}]
+2015-07-19 15:43:56.802 [info] <0.418.0> GET /index/songs [notification_center] 200 7ms
+2015-07-19 15:44:37.822 [notice] <0.422.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:44:37.823 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:44:37.823 [info] <0.422.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:44:37.824 [info] <0.422.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:44:37.824 [notice] <0.422.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:44:37.835 [notice] <0.422.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:44:37.836 [info] <0.422.0> GET /index/songs [notification_center] 200 13ms
+2015-07-19 15:44:38.651 [notice] <0.425.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:44:38.652 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:44:38.652 [info] <0.425.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:44:38.654 [notice] <0.425.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:44:38.656 [info] <0.425.0> GET /index/songs [notification_center] 200 3ms
+2015-07-19 15:45:02.324 [notice] <0.427.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:45:02.325 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:45:02.326 [info] <0.427.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:45:02.328 [info] <0.427.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:45:02.328 [notice] <0.427.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:45:02.340 [notice] <0.427.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:45:02.341 [error] <0.427.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:function_clause Stacktrace: [{boss_json,json_data1,[[{song,"song-2","TestName","TestArtist"},
+                       {song,"song-3","TestName2","TestArtist2"},
+                       {song,"song-4","TestName3","TestArtist3"}],
+                      ["notification"],
+                      []],[{file,"src/boss/boss_json.erl"},{line,31}]},{boss_json,encode,2,[{file,"src/boss/boss_json.erl"},{line,16}]},{boss_web_controller_render,process_action_result,4,[{file,"src/boss/boss_web_controller_render.erl"},{line,178}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-07-19 15:45:02.813 [notice] <0.430.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:45:02.813 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:45:02.813 [info] <0.430.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:45:02.815 [notice] <0.430.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:45:02.816 [error] <0.430.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:function_clause Stacktrace: [{boss_json,json_data1,[[{song,"song-2","TestName","TestArtist"},
+                       {song,"song-3","TestName2","TestArtist2"},
+                       {song,"song-4","TestName3","TestArtist3"}],
+                      ["notification"],
+                      []],[{file,"src/boss/boss_json.erl"},{line,31}]},{boss_json,encode,2,[{file,"src/boss/boss_json.erl"},{line,16}]},{boss_web_controller_render,process_action_result,4,[{file,"src/boss/boss_web_controller_render.erl"},{line,178}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-07-19 15:45:03.183 [notice] <0.432.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:45:03.184 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:45:03.185 [info] <0.432.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:45:03.186 [notice] <0.432.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:45:03.187 [error] <0.432.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:function_clause Stacktrace: [{boss_json,json_data1,[[{song,"song-2","TestName","TestArtist"},
+                       {song,"song-3","TestName2","TestArtist2"},
+                       {song,"song-4","TestName3","TestArtist3"}],
+                      ["notification"],
+                      []],[{file,"src/boss/boss_json.erl"},{line,31}]},{boss_json,encode,2,[{file,"src/boss/boss_json.erl"},{line,16}]},{boss_web_controller_render,process_action_result,4,[{file,"src/boss/boss_web_controller_render.erl"},{line,178}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-07-19 15:47:52.795 [notice] <0.434.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:47:52.795 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:47:52.796 [info] <0.434.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:47:52.798 [notice] <0.434.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:47:52.799 [error] <0.434.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:function_clause Stacktrace: [{boss_json,json_data1,[[{song,"song-2","TestName","TestArtist"},
+                       {song,"song-3","TestName2","TestArtist2"},
+                       {song,"song-4","TestName3","TestArtist3"}],
+                      ["notification"],
+                      []],[{file,"src/boss/boss_json.erl"},{line,31}]},{boss_json,encode,2,[{file,"src/boss/boss_json.erl"},{line,16}]},{boss_web_controller_render,process_action_result,4,[{file,"src/boss/boss_web_controller_render.erl"},{line,178}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-07-19 15:47:58.234 [notice] <0.436.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:47:58.234 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:47:58.235 [info] <0.436.0> Route: "/index/notifications"Url
+[]
+2015-07-19 15:47:58.244 [notice] <0.436.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:47:58.245 [info] <0.436.0> GET /index/notifications [notification_center] 200 10ms
+2015-07-19 15:48:27.638 [info] <0.7.0> Application lager started on node notification_center@limmen
+2015-07-19 15:48:27.644 [info] <0.7.0> Application crypto started on node notification_center@limmen
+2015-07-19 15:48:27.679 [info] <0.7.0> Application mimetypes started on node notification_center@limmen
+2015-07-19 15:48:27.688 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-07-19 15:48:27.724 [info] <0.95.0> Starting Boss in development mode....
+
+2015-07-19 15:48:27.748 [info] <0.95.0>@boss_db:start:77 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-07-19 15:48:27.837 [info] <0.95.0> Starting master services on notification_center@limmen
+
+2015-07-19 15:48:27.879 [info] <0.7.0> Application tinymq started on node notification_center@limmen
+2015-07-19 15:48:27.928 [info] <0.95.0> SSL:[]
+
+2015-07-19 15:48:27.944 [info] <0.95.0> Starting cowboy... on notification_center@limmen
+
+2015-07-19 15:48:27.963 [info] <0.7.0> Application cowlib started on node notification_center@limmen
+2015-07-19 15:48:27.967 [info] <0.7.0> Application ranch started on node notification_center@limmen
+2015-07-19 15:48:28.004 [info] <0.7.0> Application cowboy started on node notification_center@limmen
+2015-07-19 15:48:28.004 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-07-19 15:48:28.154 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application notification_center
+2015-07-19 15:48:28.178 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/mail/notification_center_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:48:28.236 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/mail/notification_center_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:48:28.248 [info] <0.95.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 15:48:28.248 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:48:28.264 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/model/song.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:48:28.264 [info] <0.95.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},song},{',',{1,13}},{'[',{1,15}},{var,{1,16},'Id'},{',',{1,18}},{var,{1,20},'Name'},{',',{1,24}},{var,{1,26},'Artist'},{']',{1,32}},{')',{1,33}},{dot,{1,34}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{3,1}}]
+2015-07-19 15:48:28.268 [notice] <0.95.0>@boss_record_compiler:make_generated_forms:225 Module "song" Parameters ['Id','Name','Artist'] Attributes[{compile,export_all}]
+2015-07-19 15:48:28.287 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/model/notification.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:48:28.288 [info] <0.95.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{3,1}},{atom,{3,2},module},{'(',{3,8}},{atom,{3,9},notification},{',',{3,21}},{'[',{3,23}},{var,{3,24},'Id'},{',',{3,26}},{var,{3,28},'Title'},{',',{3,33}},{var,{3,35},'Date'},{',',{3,39}},{var,{3,41},'Description'},{',',{3,52}},{var,{3,54},'Song'},{']',{3,58}},{')',{3,59}},{dot,{3,60}},{'-',{4,1}},{atom,{4,2},compile},{'(',{4,9}},{atom,{4,10},export_all},{')',{4,20}},{dot,{4,21}},{eof,{5,1}}]
+2015-07-19 15:48:28.291 [notice] <0.95.0>@boss_record_compiler:make_generated_forms:225 Module "notification" Parameters ['Id','Title','Date','Description','Song'] Attributes[{compile,export_all}]
+2015-07-19 15:48:28.309 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/view/lib/tag_modules/notification_center_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:48:28.331 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/view/lib/filter_modules/notification_center_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 15:48:28.336 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:308 Compile Modules "src/view/lib/tag_html"  notification_center_view_lib_tags
+2015-07-19 15:48:28.447 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/priv/init/notification_center_01_news.erl" with options [{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]}] 
+2015-07-19 15:48:34.096 [notice] <0.276.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:48:34.099 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-07-19 15:48:34.099 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:48:34.100 [info] <0.276.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:48:34.111 [notice] <0.276.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:48:34.120 [info] <0.276.0> GET /index/songs [notification_center] 200 20ms
+2015-07-19 15:48:34.459 [notice] <0.277.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:48:34.460 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:48:34.461 [info] <0.277.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:48:34.463 [notice] <0.277.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:48:34.464 [info] <0.277.0> GET /index/songs [notification_center] 200 4ms
+2015-07-19 15:48:35.896 [notice] <0.278.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:48:35.897 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:48:35.897 [info] <0.278.0> Route: "/index/songs"Url
+[]
+2015-07-19 15:48:35.899 [notice] <0.278.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:48:35.900 [info] <0.278.0> GET /index/songs [notification_center] 200 3ms
+2015-07-19 15:49:25.643 [notice] <0.283.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:49:25.645 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:49:25.645 [info] <0.283.0> Route: "/index/notifications"Url
+[]
+2015-07-19 15:49:25.648 [notice] <0.283.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:49:25.649 [info] <0.283.0> GET /index/notifications [notification_center] 200 4ms
+2015-07-19 15:49:26.503 [notice] <0.284.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:49:26.504 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:49:26.504 [info] <0.284.0> Route: "/index/notifications"Url
+[]
+2015-07-19 15:49:26.506 [notice] <0.284.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:49:26.507 [info] <0.284.0> GET /index/notifications [notification_center] 200 3ms
+2015-07-19 15:49:26.956 [notice] <0.287.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:49:26.956 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:49:26.957 [info] <0.287.0> Route: "/index/notifications"Url
+[]
+2015-07-19 15:49:26.958 [notice] <0.287.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:49:26.959 [info] <0.287.0> GET /index/notifications [notification_center] 200 2ms
+2015-07-19 15:49:27.276 [notice] <0.289.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:49:27.276 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:49:27.276 [info] <0.289.0> Route: "/index/notifications"Url
+[]
+2015-07-19 15:49:27.278 [notice] <0.289.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:49:27.279 [info] <0.289.0> GET /index/notifications [notification_center] 200 2ms
+2015-07-19 15:49:27.616 [notice] <0.291.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 15:49:27.616 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 15:49:27.617 [info] <0.291.0> Route: "/index/notifications"Url
+[]
+2015-07-19 15:49:27.618 [notice] <0.291.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 15:49:27.619 [info] <0.291.0> GET /index/notifications [notification_center] 200 2ms
+2015-07-19 16:00:27.342 [notice] <0.293.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:00:27.342 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:00:27.342 [info] <0.293.0> Route: "/index/start"Url
+[]
+2015-07-19 16:00:27.344 [notice] <0.293.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:00:27.355 [info] <0.293.0> GET /index/start [notification_center] 200 12ms
+2015-07-19 16:00:27.827 [notice] <0.295.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:00:27.827 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:00:27.828 [info] <0.295.0> Route: "/index/start"Url
+[]
+2015-07-19 16:00:27.829 [notice] <0.295.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:00:27.831 [info] <0.295.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 16:00:57.115 [notice] <0.301.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:00:57.115 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:00:57.116 [info] <0.301.0> Route: "/index/start"Url
+[]
+2015-07-19 16:00:57.118 [notice] <0.301.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:00:57.120 [info] <0.301.0> GET /index/start [notification_center] 200 5ms
+2015-07-19 16:01:00.317 [notice] <0.302.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:01:00.317 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:01:00.318 [info] <0.302.0> Route: "/index/create"Url
+[]
+2015-07-19 16:01:00.319 [notice] <0.302.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-07-19 16:01:00.371 [info] <0.302.0> POST /index/create [notification_center] 302 53ms
+2015-07-19 16:01:00.373 [notice] <0.303.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:01:00.373 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:01:00.374 [info] <0.303.0> Route: "/index/start"Url
+[]
+2015-07-19 16:01:00.375 [notice] <0.303.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:01:00.377 [info] <0.303.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 16:01:14.500 [notice] <0.309.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:01:14.501 [info] <0.262.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:01:14.501 [info] <0.309.0> Route: "/index/notifications"Url
+[]
+2015-07-19 16:01:14.502 [notice] <0.309.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:01:14.529 [info] <0.309.0> GET /index/notifications [notification_center] 200 28ms
+2015-07-19 16:05:49.768 [info] <0.7.0> Application lager started on node notification_center@limmen
+2015-07-19 16:05:49.772 [info] <0.7.0> Application crypto started on node notification_center@limmen
+2015-07-19 16:05:49.779 [info] <0.7.0> Application mimetypes started on node notification_center@limmen
+2015-07-19 16:05:49.799 [info] <0.95.0> Starting Boss in development mode....
+
+2015-07-19 16:05:49.806 [info] <0.95.0>@boss_db:start:77 Start Database Adapter boss_db_adapter_mongodb options [{adapter,mongodb},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_database,"notification_center"},{db_host,"localhost"},{db_port,1978}]
+2015-07-19 16:05:49.849 [info] <0.7.0> Application mongodb started on node notification_center@limmen
+2015-07-19 16:05:49.867 [error] <0.106.0> gen_server <0.106.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.867 [error] <0.106.0> CRASH REPORT Process <0.106.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.867 [error] <0.107.0> gen_server <0.107.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.867 [error] <0.107.0> CRASH REPORT Process <0.107.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.867 [error] <0.104.0> gen_server <0.104.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.867 [error] <0.104.0> CRASH REPORT Process <0.104.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.867 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.106.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.867 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.107.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.867 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.104.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.867 [error] <0.105.0> gen_server <0.105.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.868 [error] <0.105.0> CRASH REPORT Process <0.105.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.868 [error] <0.103.0> gen_server <0.103.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.868 [error] <0.103.0> CRASH REPORT Process <0.103.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.868 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.105.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.868 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.103.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.868 [error] <0.117.0> gen_server <0.117.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.868 [error] <0.117.0> CRASH REPORT Process <0.117.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.868 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.117.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.868 [error] <0.115.0> gen_server <0.115.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.868 [error] <0.115.0> CRASH REPORT Process <0.115.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.868 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.115.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.869 [error] <0.125.0> gen_server <0.125.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.869 [error] <0.127.0> gen_server <0.127.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.869 [error] <0.125.0> CRASH REPORT Process <0.125.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.869 [error] <0.127.0> CRASH REPORT Process <0.127.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.869 [error] <0.123.0> gen_server <0.123.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.869 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.125.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.869 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.127.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.869 [error] <0.123.0> CRASH REPORT Process <0.123.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.869 [error] <0.119.0> gen_server <0.119.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.869 [error] <0.119.0> CRASH REPORT Process <0.119.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.869 [error] <0.121.0> gen_server <0.121.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:05:49.869 [error] <0.121.0> CRASH REPORT Process <0.121.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:05:49.869 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.123.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.869 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.119.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:49.870 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.121.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:05:50.000 [warning] <0.6.0> lager_error_logger_h dropped 1623 messages in the last second that exceeded the limit of 50 messages/sec
+2015-07-19 16:05:50.112 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-07-19 16:10:40.113 [info] <0.7.0> Application lager started on node notification_center@limmen
+2015-07-19 16:10:40.117 [info] <0.7.0> Application crypto started on node notification_center@limmen
+2015-07-19 16:10:40.147 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-07-19 16:10:40.150 [info] <0.7.0> Application mimetypes started on node notification_center@limmen
+2015-07-19 16:10:40.192 [info] <0.95.0> Starting Boss in development mode....
+
+2015-07-19 16:10:40.224 [info] <0.95.0>@boss_db:start:77 Start Database Adapter boss_db_adapter_mongodb options [{adapter,mongodb},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_database,"notification_center"},{db_host,"localhost"},{db_port,1978}]
+2015-07-19 16:10:40.232 [info] <0.7.0> Application mongodb started on node notification_center@limmen
+2015-07-19 16:10:40.277 [error] <0.107.0> gen_server <0.107.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.277 [error] <0.107.0> CRASH REPORT Process <0.107.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.277 [error] <0.106.0> gen_server <0.106.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.277 [error] <0.106.0> CRASH REPORT Process <0.106.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.277 [error] <0.105.0> gen_server <0.105.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.277 [error] <0.105.0> CRASH REPORT Process <0.105.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.277 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.107.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.277 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.106.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.277 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.105.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.277 [error] <0.103.0> gen_server <0.103.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.277 [error] <0.104.0> gen_server <0.104.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.277 [error] <0.103.0> CRASH REPORT Process <0.103.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.278 [error] <0.104.0> CRASH REPORT Process <0.104.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.278 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.103.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.278 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.104.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.278 [error] <0.115.0> gen_server <0.115.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.278 [error] <0.115.0> CRASH REPORT Process <0.115.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.278 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.115.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.278 [error] <0.117.0> gen_server <0.117.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.278 [error] <0.117.0> CRASH REPORT Process <0.117.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.278 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.117.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.278 [error] <0.119.0> gen_server <0.119.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.278 [error] <0.119.0> CRASH REPORT Process <0.119.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.278 [error] <0.121.0> gen_server <0.121.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.278 [error] <0.121.0> CRASH REPORT Process <0.121.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.278 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.119.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.279 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.121.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.279 [error] <0.123.0> gen_server <0.123.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.279 [error] <0.123.0> CRASH REPORT Process <0.123.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.279 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.123.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.279 [error] <0.127.0> gen_server <0.127.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.279 [error] <0.127.0> CRASH REPORT Process <0.127.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.279 [error] <0.125.0> gen_server <0.125.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.279 [error] <0.125.0> CRASH REPORT Process <0.125.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.279 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.127.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.279 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.125.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.279 [error] <0.129.0> gen_server <0.129.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.279 [error] <0.129.0> CRASH REPORT Process <0.129.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.280 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.129.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.280 [error] <0.133.0> gen_server <0.133.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.280 [error] <0.133.0> CRASH REPORT Process <0.133.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.280 [error] <0.131.0> gen_server <0.131.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.280 [error] <0.131.0> CRASH REPORT Process <0.131.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.280 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.133.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.280 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.131.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.280 [error] <0.135.0> gen_server <0.135.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.280 [error] <0.135.0> CRASH REPORT Process <0.135.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.280 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.135.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.280 [error] <0.137.0> gen_server <0.137.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.280 [error] <0.137.0> CRASH REPORT Process <0.137.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.280 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.137.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.280 [error] <0.139.0> gen_server <0.139.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.280 [error] <0.139.0> CRASH REPORT Process <0.139.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.280 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.139.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.280 [error] <0.141.0> gen_server <0.141.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.281 [error] <0.141.0> CRASH REPORT Process <0.141.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.281 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.141.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.281 [error] <0.143.0> gen_server <0.143.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.281 [error] <0.145.0> gen_server <0.145.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.281 [error] <0.143.0> CRASH REPORT Process <0.143.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.281 [error] <0.145.0> CRASH REPORT Process <0.145.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.281 [error] <0.147.0> gen_server <0.147.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.281 [error] <0.147.0> CRASH REPORT Process <0.147.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.281 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.143.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.281 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.145.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.281 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.147.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.281 [error] <0.149.0> gen_server <0.149.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.281 [error] <0.149.0> CRASH REPORT Process <0.149.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.282 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.149.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.282 [error] <0.151.0> gen_server <0.151.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.282 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.282 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.151.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.282 [error] <0.153.0> gen_server <0.153.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.282 [error] <0.153.0> CRASH REPORT Process <0.153.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.282 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.153.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.282 [error] <0.155.0> gen_server <0.155.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.282 [error] <0.155.0> CRASH REPORT Process <0.155.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.282 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.155.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.282 [error] <0.157.0> gen_server <0.157.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.282 [error] <0.157.0> CRASH REPORT Process <0.157.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.282 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.157.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:40.282 [error] <0.161.0> gen_server <0.161.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.283 [error] <0.161.0> CRASH REPORT Process <0.161.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.283 [error] <0.159.0> gen_server <0.159.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:40.283 [error] <0.159.0> CRASH REPORT Process <0.159.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:40.283 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.161.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:41.000 [warning] <0.6.0> lager_error_logger_h dropped 9007 messages in the last second that exceeded the limit of 50 messages/sec
+2015-07-19 16:10:46.574 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.13738.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:46.574 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.13740.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:46.574 [error] <0.13742.0> gen_server <0.13742.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:46.574 [error] <0.13742.0> CRASH REPORT Process <0.13742.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:46.574 [error] <0.13744.0> gen_server <0.13744.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:46.574 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.13742.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:46.574 [error] <0.13744.0> CRASH REPORT Process <0.13744.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:46.574 [error] <0.13746.0> gen_server <0.13746.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:46.574 [error] <0.13746.0> CRASH REPORT Process <0.13746.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:46.574 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.13744.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:46.574 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.13746.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:46.574 [error] <0.13748.0> gen_server <0.13748.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:10:46.574 [error] <0.13748.0> CRASH REPORT Process <0.13748.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
+2015-07-19 16:10:46.575 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.13748.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-19 16:10:46.575 [error] <0.13750.0> gen_server <0.13750.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
+2015-07-19 16:13:36.672 [info] <0.7.0> Application lager started on node notification_center@limmen
+2015-07-19 16:13:36.675 [info] <0.7.0> Application crypto started on node notification_center@limmen
+2015-07-19 16:13:36.682 [info] <0.7.0> Application mimetypes started on node notification_center@limmen
+2015-07-19 16:13:36.701 [info] <0.95.0> Starting Boss in development mode....
+
+2015-07-19 16:13:36.707 [info] <0.95.0>@boss_db:start:77 Start Database Adapter boss_db_adapter_mongodb options [{adapter,mongodb},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_database,"notification_center"},{db_host,"localhost"},{db_port,27017}]
+2015-07-19 16:13:36.711 [info] <0.7.0> Application mongodb started on node notification_center@limmen
+2015-07-19 16:13:36.735 [info] <0.95.0> Starting master services on notification_center@limmen
+
+2015-07-19 16:13:36.744 [info] <0.7.0> Application tinymq started on node notification_center@limmen
+2015-07-19 16:13:36.758 [info] <0.95.0> SSL:[]
+
+2015-07-19 16:13:36.759 [info] <0.95.0> Starting cowboy... on notification_center@limmen
+
+2015-07-19 16:13:36.770 [info] <0.7.0> Application cowlib started on node notification_center@limmen
+2015-07-19 16:13:36.789 [info] <0.7.0> Application ranch started on node notification_center@limmen
+2015-07-19 16:13:36.828 [info] <0.7.0> Application cowboy started on node notification_center@limmen
+2015-07-19 16:13:36.828 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-07-19 16:13:36.929 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application notification_center
+2015-07-19 16:13:36.952 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/mail/notification_center_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 16:13:37.018 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-07-19 16:13:37.047 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/mail/notification_center_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 16:13:37.058 [info] <0.95.0>@boss_controller_compiler:compile:59 Compile controller /home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl
+2015-07-19 16:13:37.059 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/controller/notification_center_index_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 16:13:37.085 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/model/song.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 16:13:37.092 [info] <0.95.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},song},{',',{1,13}},{'[',{1,15}},{var,{1,16},'Id'},{',',{1,18}},{var,{1,20},'Name'},{',',{1,24}},{var,{1,26},'Artist'},{']',{1,32}},{')',{1,33}},{dot,{1,34}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{3,1}}]
+2015-07-19 16:13:37.095 [notice] <0.95.0>@boss_record_compiler:make_generated_forms:225 Module "song" Parameters ['Id','Name','Artist'] Attributes[{compile,export_all}]
+2015-07-19 16:13:37.114 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/model/notification.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 16:13:37.119 [info] <0.95.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{3,1}},{atom,{3,2},module},{'(',{3,8}},{atom,{3,9},notification},{',',{3,21}},{'[',{3,23}},{var,{3,24},'Id'},{',',{3,26}},{var,{3,28},'Title'},{',',{3,33}},{var,{3,35},'Date'},{',',{3,39}},{var,{3,41},'Description'},{',',{3,52}},{var,{3,54},'Song'},{']',{3,58}},{')',{3,59}},{dot,{3,60}},{'-',{4,1}},{atom,{4,2},compile},{'(',{4,9}},{atom,{4,10},export_all},{')',{4,20}},{dot,{4,21}},{eof,{5,1}}]
+2015-07-19 16:13:37.123 [notice] <0.95.0>@boss_record_compiler:make_generated_forms:225 Module "notification" Parameters ['Id','Title','Date','Description','Song'] Attributes[{compile,export_all}]
+2015-07-19 16:13:37.140 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/view/lib/tag_modules/notification_center_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 16:13:37.156 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/src/view/lib/filter_modules/notification_center_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-07-19 16:13:37.161 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:308 Compile Modules "src/view/lib/tag_html"  notification_center_view_lib_tags
+2015-07-19 16:13:37.276 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/kim/workspace/erlangprojects/notification_center/priv/init/notification_center_01_news.erl" with options [{include_dirs,["/home/kim/workspace/erlangprojects/notification_center/include"]}] 
+2015-07-19 16:13:52.922 [notice] <0.284.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:13:52.925 [warning] <0.6.0> lager_error_logger_h dropped 53 messages in the last second that exceeded the limit of 50 messages/sec
+2015-07-19 16:13:52.925 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:13:52.925 [info] <0.284.0> Route: "/index/start"Url
+[]
+2015-07-19 16:13:52.935 [notice] <0.284.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:13:52.958 [info] <0.284.0> GET /index/start [notification_center] 200 33ms
+2015-07-19 16:13:56.846 [notice] <0.283.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:13:56.846 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:13:56.847 [info] <0.283.0> Route: "/index/create"Url
+[]
+2015-07-19 16:13:56.849 [notice] <0.283.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-07-19 16:13:57.042 [info] <0.283.0> POST /index/create [notification_center] 302 196ms
+2015-07-19 16:13:57.051 [notice] <0.287.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:13:57.051 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:13:57.052 [info] <0.287.0> Route: "/index/start"Url
+[]
+2015-07-19 16:13:57.053 [notice] <0.287.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:13:57.055 [info] <0.287.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 16:14:03.434 [notice] <0.289.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:14:03.434 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:14:03.434 [info] <0.289.0> Route: "/index/notifications"Url
+[]
+2015-07-19 16:14:03.436 [notice] <0.289.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:14:03.471 [info] <0.289.0> GET /index/notifications [notification_center] 200 36ms
+2015-07-19 16:14:04.079 [notice] <0.290.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:14:04.080 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:14:04.081 [info] <0.290.0> Route: "/index/notifications"Url
+[]
+2015-07-19 16:14:04.087 [notice] <0.290.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:14:04.091 [info] <0.290.0> GET /index/notifications [notification_center] 200 11ms
+2015-07-19 16:22:42.330 [notice] <0.306.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:22:42.331 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:22:42.331 [info] <0.306.0> Route: "/index/songs"Url
+[]
+2015-07-19 16:22:42.333 [notice] <0.306.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:22:42.334 [info] <0.306.0> GET /index/songs [notification_center] 200 3ms
+2015-07-19 16:22:42.835 [notice] <0.307.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:22:42.835 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:22:42.836 [info] <0.307.0> Route: "/index/songs"Url
+[]
+2015-07-19 16:22:42.837 [notice] <0.307.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:22:42.839 [info] <0.307.0> GET /index/songs [notification_center] 200 3ms
+2015-07-19 16:28:24.233 [notice] <0.314.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:28:24.234 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:28:24.234 [info] <0.314.0> Route: "/index/songs"Url
+[]
+2015-07-19 16:28:24.236 [notice] <0.314.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:28:24.238 [info] <0.314.0> GET /index/songs [notification_center] 200 3ms
+2015-07-19 16:28:24.852 [notice] <0.317.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:28:24.853 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:28:24.853 [info] <0.317.0> Route: "/index/songs"Url
+[]
+2015-07-19 16:28:24.855 [notice] <0.317.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:28:24.856 [info] <0.317.0> GET /index/songs [notification_center] 200 3ms
+2015-07-19 16:28:27.684 [notice] <0.320.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:28:27.684 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:28:27.685 [info] <0.320.0> Route: "/index/start"Url
+[]
+2015-07-19 16:28:27.686 [notice] <0.320.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:28:27.687 [info] <0.320.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 16:28:28.655 [notice] <0.321.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:28:28.656 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:28:28.656 [info] <0.321.0> Route: "/index/start"Url
+[]
+2015-07-19 16:28:28.658 [notice] <0.321.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:28:28.659 [info] <0.321.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 16:28:49.818 [notice] <0.329.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:28:49.819 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:28:49.820 [info] <0.329.0> Route: "/index/start"Url
+[]
+2015-07-19 16:28:49.821 [notice] <0.329.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:28:49.823 [info] <0.329.0> GET /index/start [notification_center] 200 3ms
+2015-07-19 16:34:16.055 [notice] <0.336.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-19 16:34:16.056 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-19 16:34:16.056 [info] <0.336.0> Route: "/index/start"Url
+[]
+2015-07-19 16:34:16.058 [notice] <0.336.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-19 16:34:16.059 [info] <0.336.0> GET /index/start [notification_center] 200 3ms
