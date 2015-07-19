@@ -29,4 +29,490 @@ POST /index/ajax/test.html [notification_center] 404 5ms2015-07-19 10:16:42 =ERR
 POST /index/ajax/test.html [notification_center] 404 5ms2015-07-19 10:26:42 =ERROR REPORT====
 "Error in controller, see console.log for details\n"
 2015-07-19 10:26:42 =ERROR REPORT====
-POST /index/create [notification_center] 500 192ms
+POST /index/create [notification_center] 500 192ms2015-07-19 13:35:40 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 13:35:40 =ERROR REPORT====
+GET /index/start/create [notification_center] 500 4ms2015-07-19 13:36:12 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 13:36:12 =ERROR REPORT====
+GET /index/start/create [notification_center] 500 19ms2015-07-19 13:36:13 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 13:36:13 =ERROR REPORT====
+GET /index/start/create [notification_center] 500 4ms2015-07-19 13:36:13 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 13:36:13 =ERROR REPORT====
+GET /index/start/create [notification_center] 500 4ms2015-07-19 13:36:14 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 13:36:14 =ERROR REPORT====
+GET /index/start/create [notification_center] 500 5ms2015-07-19 14:01:56 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 14:01:56 =ERROR REPORT====
+POST /index/create [notification_center] 500 15ms2015-07-19 14:02:46 =ERROR REPORT====
+** Generic server boss_db_mock terminating 
+** Last message in was {find,notification,[],all,0,id,ascending}
+** When Server state == [{{dict,2,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[["notification-3"|{notification,"notification-3","MyTitle"}]],[],[],[],[],[],[],[],[],[],[],[["notification-2"|{notification,"notification-2","MyTitle"}]],[],[]}}},4}]
+** Reason for termination == 
+** {function_clause,[{notification,id,[{notification,"notification-3","MyTitle"}],[]},{boss_db_mock_controller,sortable_attribute,2,[{file,"src/boss_db_mock_controller.erl"},{line,172}]},{boss_db_mock_controller,'-do_find/7-fun-0-',4,[{file,"src/boss_db_mock_controller.erl"},{line,102}]},{lists,sort,2,[{file,"lists.erl"},{line,967}]},{boss_db_mock_controller,do_find,7,[{file,"src/boss_db_mock_controller.erl"},{line,101}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,24}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-19 14:02:46 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_mock_controller:init/1
+    pid: <0.97.0>
+    registered_name: []
+    exception exit: {{function_clause,[{notification,id,[{notification,"notification-3","MyTitle"}],[]},{boss_db_mock_controller,sortable_attribute,2,[{file,"src/boss_db_mock_controller.erl"},{line,172}]},{boss_db_mock_controller,'-do_find/7-fun-0-',4,[{file,"src/boss_db_mock_controller.erl"},{line,102}]},{lists,sort,2,[{file,"lists.erl"},{line,967}]},{boss_db_mock_controller,do_find,7,[{file,"src/boss_db_mock_controller.erl"},{line,101}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,24}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.96.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.96.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 29175
+  neighbours:
+2015-07-19 14:02:46 =SUPERVISOR REPORT====
+     Supervisor: {global,boss_db_mock_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{notification,id,[{notification,"notification-3","MyTitle"}],[]},{boss_db_mock_controller,sortable_attribute,2,[{file,"src/boss_db_mock_controller.erl"},{line,172}]},{boss_db_mock_controller,'-do_find/7-fun-0-',4,[{file,"src/boss_db_mock_controller.erl"},{line,102}]},{lists,sort,2,[{file,"lists.erl"},{line,967}]},{boss_db_mock_controller,do_find,7,[{file,"src/boss_db_mock_controller.erl"},{line,101}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,24}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.97.0>},{name,db_mock_controller},{mfargs,{boss_db_mock_controller,start_link,[[]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-19 14:02:46 =ERROR REPORT====
+** Generic server <0.104.0> terminating 
+** Last message in was {find,notification,[],all,0,id,ascending,[]}
+** When Server state == {state,connected,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}],boss_db_adapter_mock,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
+** Reason for termination == 
+** {{function_clause,[{notification,id,[{notification,"notification-3","MyTitle"}],[]},{boss_db_mock_controller,sortable_attribute,2,[{file,"src/boss_db_mock_controller.erl"},{line,172}]},{boss_db_mock_controller,'-do_find/7-fun-0-',4,[{file,"src/boss_db_mock_controller.erl"},{line,102}]},{lists,sort,2,[{file,"lists.erl"},{line,967}]},{boss_db_mock_controller,do_find,7,[{file,"src/boss_db_mock_controller.erl"},{line,101}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,24}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{find,notification,[],all,0,id,ascending}]}}
+2015-07-19 14:02:46 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_controller:init/1
+    pid: <0.104.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{notification,id,[{notification,"notification-3","MyTitle"}],[]},{boss_db_mock_controller,sortable_attribute,2,[{file,"src/boss_db_mock_controller.erl"},{line,172}]},{boss_db_mock_controller,'-do_find/7-fun-0-',4,[{file,"src/boss_db_mock_controller.erl"},{line,102}]},{lists,sort,2,[{file,"lists.erl"},{line,967}]},{boss_db_mock_controller,do_find,7,[{file,"src/boss_db_mock_controller.erl"},{line,101}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,24}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{find,notification,[],all,0,id,ascending}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.100.0>,boss_db_pool,boss_db_sup,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.100.0>,<0.99.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 17402
+  neighbours:
+2015-07-19 14:02:46 =SUPERVISOR REPORT====
+     Supervisor: {<0.100.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{notification,id,[{notification,"notification-3","MyTitle"}],[]},{boss_db_mock_controller,sortable_attribute,2,[{file,"src/boss_db_mock_controller.erl"},{line,172}]},{boss_db_mock_controller,'-do_find/7-fun-0-',4,[{file,"src/boss_db_mock_controller.erl"},{line,102}]},{lists,sort,2,[{file,"lists.erl"},{line,967}]},{boss_db_mock_controller,do_find,7,[{file,"src/boss_db_mock_controller.erl"},{line,101}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,24}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{find,notification,[],all,0,id,ascending}]}}
+     Offender:   [{pid,<0.104.0>},{name,boss_db_controller},{mfargs,{boss_db_controller,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2015-07-19 14:02:46 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 14:02:46 =ERROR REPORT====
+GET /index/create [notification_center] 500 25ms2015-07-19 14:02:46 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 14:02:46 =ERROR REPORT====
+GET /index/create [notification_center] 500 3ms2015-07-19 14:02:52 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 14:02:52 =ERROR REPORT====
+GET /index/create [notification_center] 500 5ms2015-07-19 14:08:56 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 14:08:56 =ERROR REPORT====
+GET /index/create [notification_center] 500 16ms2015-07-19 14:08:58 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 14:08:58 =ERROR REPORT====
+GET /index/create [notification_center] 500 5ms2015-07-19 14:10:47 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 14:10:47 =ERROR REPORT====
+GET /index/create [notification_center] 500 21ms2015-07-19 14:10:47 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 14:10:47 =ERROR REPORT====
+GET /index/create [notification_center] 500 4ms2015-07-19 14:21:06 =ERROR REPORT====
+** Generic server boss_db_mock terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == [{{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},1}]
+** Reason for termination == 
+** {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-19 14:21:06 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_mock_controller:init/1
+    pid: <0.97.0>
+    registered_name: []
+    exception exit: {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.96.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.96.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 173
+  neighbours:
+2015-07-19 14:21:06 =SUPERVISOR REPORT====
+     Supervisor: {global,boss_db_mock_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.97.0>},{name,db_mock_controller},{mfargs,{boss_db_mock_controller,start_link,[[]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-19 14:21:06 =ERROR REPORT====
+** Generic server <0.101.0> terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == {state,connected,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}],boss_db_adapter_mock,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
+** Reason for termination == 
+** {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+2015-07-19 14:21:06 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_controller:init/1
+    pid: <0.101.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.100.0>,boss_db_pool,boss_db_sup,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.100.0>,<0.99.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 270
+  neighbours:
+2015-07-19 14:21:06 =SUPERVISOR REPORT====
+     Supervisor: {<0.100.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+     Offender:   [{pid,<0.101.0>},{name,boss_db_controller},{mfargs,{boss_db_controller,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2015-07-19 14:21:51 =ERROR REPORT====
+** Generic server boss_db_mock terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == [{{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},1}]
+** Reason for termination == 
+** {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-19 14:21:51 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_mock_controller:init/1
+    pid: <0.284.0>
+    registered_name: []
+    exception exit: {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.96.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.96.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 175
+  neighbours:
+2015-07-19 14:21:51 =SUPERVISOR REPORT====
+     Supervisor: {global,boss_db_mock_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.284.0>},{name,db_mock_controller},{mfargs,{boss_db_mock_controller,start_link,[[]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-19 14:21:51 =ERROR REPORT====
+** Generic server <0.102.0> terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == {state,connected,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}],boss_db_adapter_mock,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
+** Reason for termination == 
+** {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+2015-07-19 14:21:51 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_controller:init/1
+    pid: <0.102.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.100.0>,boss_db_pool,boss_db_sup,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.100.0>,<0.99.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 270
+  neighbours:
+2015-07-19 14:21:51 =SUPERVISOR REPORT====
+     Supervisor: {<0.100.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+     Offender:   [{pid,<0.102.0>},{name,boss_db_controller},{mfargs,{boss_db_controller,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2015-07-19 14:22:52 =ERROR REPORT====
+** Generic server boss_db_mock terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == [{{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},1}]
+** Reason for termination == 
+** {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-19 14:22:52 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_mock_controller:init/1
+    pid: <0.288.0>
+    registered_name: []
+    exception exit: {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.96.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.96.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 284
+  neighbours:
+2015-07-19 14:22:52 =SUPERVISOR REPORT====
+     Supervisor: {global,boss_db_mock_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.288.0>},{name,db_mock_controller},{mfargs,{boss_db_mock_controller,start_link,[[]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-19 14:22:52 =ERROR REPORT====
+** Generic server <0.104.0> terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == {state,connected,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}],boss_db_adapter_mock,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
+** Reason for termination == 
+** {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+2015-07-19 14:22:52 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_controller:init/1
+    pid: <0.104.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.100.0>,boss_db_pool,boss_db_sup,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.100.0>,<0.99.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 274
+  neighbours:
+2015-07-19 14:22:52 =SUPERVISOR REPORT====
+     Supervisor: {<0.100.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+     Offender:   [{pid,<0.104.0>},{name,boss_db_controller},{mfargs,{boss_db_controller,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2015-07-19 14:25:27 =ERROR REPORT====
+** Generic server boss_db_mock terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == [{{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},1}]
+** Reason for termination == 
+** {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-19 14:25:27 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_mock_controller:init/1
+    pid: <0.294.0>
+    registered_name: []
+    exception exit: {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.96.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.96.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 284
+  neighbours:
+2015-07-19 14:25:27 =SUPERVISOR REPORT====
+     Supervisor: {global,boss_db_mock_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.294.0>},{name,db_mock_controller},{mfargs,{boss_db_mock_controller,start_link,[[]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-19 14:25:27 =ERROR REPORT====
+** Generic server <0.285.0> terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == {state,connected,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}],boss_db_adapter_mock,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
+** Reason for termination == 
+** {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+2015-07-19 14:25:27 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_controller:init/1
+    pid: <0.285.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.100.0>,boss_db_pool,boss_db_sup,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.100.0>,<0.99.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 266
+  neighbours:
+2015-07-19 14:25:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.100.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+     Offender:   [{pid,<0.285.0>},{name,boss_db_controller},{mfargs,{boss_db_controller,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2015-07-19 14:28:08 =ERROR REPORT====
+** Generic server boss_db_mock terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == [{{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},1}]
+** Reason for termination == 
+** {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-19 14:28:08 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_mock_controller:init/1
+    pid: <0.310.0>
+    registered_name: []
+    exception exit: {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.96.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.96.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 175
+  neighbours:
+2015-07-19 14:28:08 =SUPERVISOR REPORT====
+     Supervisor: {global,boss_db_mock_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.310.0>},{name,db_mock_controller},{mfargs,{boss_db_mock_controller,start_link,[[]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-19 14:28:08 =ERROR REPORT====
+** Generic server <0.289.0> terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == {state,connected,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}],boss_db_adapter_mock,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
+** Reason for termination == 
+** {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+2015-07-19 14:28:08 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_controller:init/1
+    pid: <0.289.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.100.0>,boss_db_pool,boss_db_sup,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.100.0>,<0.99.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 270
+  neighbours:
+2015-07-19 14:28:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.100.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+     Offender:   [{pid,<0.289.0>},{name,boss_db_controller},{mfargs,{boss_db_controller,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2015-07-19 14:28:27 =ERROR REPORT====
+** Generic server boss_db_mock terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == [{{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},1}]
+** Reason for termination == 
+** {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-19 14:28:27 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_mock_controller:init/1
+    pid: <0.314.0>
+    registered_name: []
+    exception exit: {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.96.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.96.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 175
+  neighbours:
+2015-07-19 14:28:27 =SUPERVISOR REPORT====
+     Supervisor: {global,boss_db_mock_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.314.0>},{name,db_mock_controller},{mfargs,{boss_db_mock_controller,start_link,[[]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-19 14:28:27 =ERROR REPORT====
+** Generic server <0.103.0> terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == {state,connected,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}],boss_db_adapter_mock,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
+** Reason for termination == 
+** {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+2015-07-19 14:28:27 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_controller:init/1
+    pid: <0.103.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.100.0>,boss_db_pool,boss_db_sup,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.100.0>,<0.99.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 290
+  neighbours:
+2015-07-19 14:28:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.100.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+     Offender:   [{pid,<0.103.0>},{name,boss_db_controller},{mfargs,{boss_db_controller,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2015-07-19 14:33:37 =ERROR REPORT====
+** Generic server boss_db_mock terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == [{{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},1}]
+** Reason for termination == 
+** {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-19 14:33:37 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_mock_controller:init/1
+    pid: <0.319.0>
+    registered_name: []
+    exception exit: {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.96.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.96.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 2176
+  neighbours:
+2015-07-19 14:33:37 =ERROR REPORT====
+** Generic server <0.295.0> terminating 
+** Last message in was {save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}
+** When Server state == {state,connected,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}],boss_db_adapter_mock,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
+** Reason for termination == 
+** {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+2015-07-19 14:33:37 =CRASH REPORT====
+  crasher:
+    initial call: boss_db_controller:init/1
+    pid: <0.295.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.100.0>,boss_db_pool,boss_db_sup,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.100.0>,<0.99.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 2271
+  neighbours:
+2015-07-19 14:33:37 =SUPERVISOR REPORT====
+     Supervisor: {global,boss_db_mock_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.319.0>},{name,db_mock_controller},{mfargs,{boss_db_mock_controller,start_link,[[]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-19 14:33:37 =SUPERVISOR REPORT====
+     Supervisor: {<0.100.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{string,tokens1,[{id,"MyTitle","MyDate","MyDescr","MySong"},"-",[]],[{file,"string.erl"},{line,226}]},{boss_db_mock_controller,handle_call,3,[{file,"src/boss_db_mock_controller.erl"},{line,59}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[{global,boss_db_mock},{save_record,{notification,{id,"MyTitle","MyDate","MyDescr","MySong"}}}]}}
+     Offender:   [{pid,<0.295.0>},{name,boss_db_controller},{mfargs,{boss_db_controller,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
