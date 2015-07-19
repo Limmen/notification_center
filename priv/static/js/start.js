@@ -27,9 +27,13 @@ var Start = React.createClass({
     },
 
     dateT: function(){
+        var that = this;
         $(function () {
             $('#datetimepicker2').datepicker({
-                locale: 'sv'
+                locale: 'sv',
+                onSelect: function (data) {
+                    that.setState({inputDate: data});
+                }
             });
         });
     },
@@ -42,10 +46,29 @@ var Start = React.createClass({
     getInitialState: function() { 
         return{
             notifications : [{description : "laundry", time : 10}, {description :  "laundry", time : 10}, {description : "laundry", time : 10}, {description : "laundry", time : 10}],
-            timer: 0
+            timer: 0,
+            inputDescr:"",
+            inputDate: "",
         };
     },
 
+    newEvent: function(){
+        var descr = this.state.inputDescr;
+        var dateTime = this.state.inputDate;
+        console.log("Clicked " + descr + "  " + dateTime);
+        $.post( "/index/create",{description : descr, date: dateTime}, function( data ) {
+            console.log("posted!");
+        });
+        
+    },
+    descrChange: function(e){
+        console.log("DescrChange");
+        this.setState({inputDescr : e.target.value});
+    },
+    dateChange: function(e){
+        console.log("DateChange");
+        this.setState({inputDate : e.target.value});
+    },
     
     render: function() {
         return (
@@ -62,19 +85,17 @@ var Start = React.createClass({
             <div className="col-sm-5">
 
             <h2> Add new event </h2>
-            <form role="form" action="/index/create">
             
             <div className="form-group">
             <label for="descr">Description:</label>
-            <input type="text" className="form-control" id="descr"/>
+            <input type="text" className="form-control" id="descr" value={this.state.inputDescr} onChange={this.descrChange}/>
             </div>
             
             <div className="form-group">
             <label for="datetimepicker2">Date:</label>
-            <input type='text' className="form-control" id='datetimepicker2' />
+            <input type='text' className="form-control" id='datetimepicker2'   onChange={this.dateChange}/>
             </div>
-            <button type="submit" className="btn btn-default">Submit</button>
-            </form>
+            <button type="submit" className="btn btn-default" onClick={this.newEvent}>Submit</button> 
             
             </div>
             

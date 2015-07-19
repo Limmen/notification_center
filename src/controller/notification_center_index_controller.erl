@@ -17,4 +17,8 @@ create('GET', [])->
 
 create('POST', [])->
     io:format(" ~n ~n Post request!  ~n ~n"),
+    DateTime = Req:post_param("date"),
+    Description = Req:post_param("description"),
+    io:format(" ~n ~n DateTime:  ~p, Description: ~p ~n ~n",[DateTime|Description]),
     {redirect, [{action, "start"}]}.
+

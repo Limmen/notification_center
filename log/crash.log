@@ -23,4 +23,10 @@ GET /chicago-boss.png [notification_center] 404 15ms2015-07-18 19:17:56 =ERROR R
 GET /index/create [notification_center] 500 225ms2015-07-18 19:19:41 =ERROR REPORT====
 "Error in controller, see console.log for details\n"
 2015-07-18 19:19:41 =ERROR REPORT====
-GET /index/create [notification_center] 500 7ms
+GET /index/create [notification_center] 500 7ms2015-07-19 10:13:09 =ERROR REPORT====
+POST /index/ajax/test.html [notification_center] 404 3ms2015-07-19 10:16:39 =ERROR REPORT====
+POST /index/ajax/test.html [notification_center] 404 5ms2015-07-19 10:16:42 =ERROR REPORT====
+POST /index/ajax/test.html [notification_center] 404 5ms2015-07-19 10:26:42 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-19 10:26:42 =ERROR REPORT====
+POST /index/create [notification_center] 500 192ms
