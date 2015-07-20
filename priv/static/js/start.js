@@ -1,10 +1,30 @@
 
 
 var Notification = React.createClass({
-    
+
+    getInitialState: function() { 
+        return{
+            hidden: true
+        }
+    },
     componentDidMount: function(){
+        var id_div = "#" + this.props.id
+        console.log(this.props.id);
+        $(id_div).hide();
     }, 
 
+    show: function(){
+        var id_div = "#" + this.props.id
+        console.log("Show!");
+        if(this.state.hidden){
+            $(id_div).show();
+            this.setState({hidden : false});
+        }
+        else{
+            $(id_div).hide();
+            this.setState({hidden : true});
+        }
+    },
     
     render: function() {
         var elapsed = Math.round(this.props.timeLeft / 100);
@@ -12,9 +32,14 @@ var Notification = React.createClass({
         // This will give a number with one digit after the decimal dot (xx.x):
         var seconds = (elapsed / 10).toFixed(1);    
         return(
-        <div className="list-group-item">
-        <p> Description: {this.props.description} Time: {this.props.time} </p>
+        <div className="list-group-item" onClick={this.show}>
+        <p> Title: {this.props.title} </p>
             <p> Time left: {seconds} </p>
+            <div id={this.props.id}>
+            <p> Description: {this.props.descr} </p>
+            <p> Date: {this.props.time} </p>
+            <p> Song: {this.props.song} </p>
+            </div>
         </div>
         );
     }
@@ -45,7 +70,7 @@ var Start = React.createClass({
     
     getInitialState: function() { 
         return{
-            notifications : [{description : "laundry", time : 10}, {description :  "laundry", time : 10}, {description : "laundry", time : 10}, {description : "laundry", time : 10}],
+            notifications : [{id : "1", title :"ggg", description : "laundry", time : 10, song: "ggSOng"}, {id : "2", title :"ggg", description : "laundry", time : 10, song: "ggSOng"}, {id : "3", title :"ggg", description : "laundry", time : 10, song: "ggSOng"}, {id : "4", title :"ggg", description : "laundry", time : 10, song: "ggSOng"}],
             songs: [{name: "TestSong", artist: "testArtist"}, {name: "TestSong", artist: "testArtist"}, {name: "TestSong", artist: "testArtist"}, {name: "TestSong", artist: "testArtist"}],
             timer: 0,
             inputDescr:"",
@@ -137,9 +162,12 @@ var Start = React.createClass({
             <div className="list-group">
             <h2> Upcoming events </h2>
             {this.state.notifications.map(function(note) {
+                var id = note.id
+                var title = note.title;
                 var descr = note.description;
                 var time = note.time;
-                return <Notification description={descr} time={time} timeLeft={this.state.timer}/>
+                var song = note.song;
+                return <Notification id={id} title={title} descr={descr} time={time} song={song} timeLeft={this.state.timer}/>
             }.bind(this))}
             </div>
             </div>
