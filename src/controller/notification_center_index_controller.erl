@@ -22,7 +22,7 @@ create('POST', [])->
     Description = Req:post_param("description"),
     Title = Req:post_param("title"),
     Song = Req:post_param("song"),
-    NewNotification= notification:new(id,"MyTitle", "MyDate", "MyDescription", "MySong"),
+    NewNotification= notification:new(id,Title, DateTime, Description, Song),
     {ok, SavedNotification} = NewNotification:save(),
     io:format(" ~n ~n DateTime:  ~p, Description: ~p, Title: ~p, Song: ~p  ~n ~n",[DateTime,Description, Title, Song]),
     {redirect, [{action, "start"}]}.

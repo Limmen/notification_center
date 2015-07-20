@@ -60,7 +60,8 @@ var Start = React.createClass({
         var descr = this.state.inputDescr;
         var dateTime = $("#datetimepicker2").find("input").val();
         var song = this.state.inputSongs;
-        console.log("Clicked " + descr + "  " + dateTime);
+
+        this.setState({inputTitle : "", inputDescr : "", inputSongs : ""});
         $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
             console.log("posted!");
         });
@@ -120,6 +121,7 @@ var Start = React.createClass({
             <div className="form-group">
             <label for="songs">Song:</label>
             <select className="form-control" id="songs" value={this.state.inputSongs} onChange={this.songsChange}>
+            <option> </option>
             {this.state.songs.map(function(song) {
                 var name = song.name;
                 var artist = song.artist;
