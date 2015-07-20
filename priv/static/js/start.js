@@ -56,10 +56,12 @@ var Start = React.createClass({
     },
 
     newEvent: function(){
+        var title = this.state.inputTitle;
         var descr = this.state.inputDescr;
         var dateTime = $("#datetimepicker2").find("input").val();
+        var song = this.state.inputSongs;
         console.log("Clicked " + descr + "  " + dateTime);
-        $.post( "/index/create",{description : descr, date: dateTime}, function( data ) {
+        $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
             console.log("posted!");
         });
         
