@@ -33,12 +33,13 @@ var Notification = React.createClass({
         var seconds = (elapsed / 10).toFixed(1);    
         return(
         <div className="list-group-item" onClick={this.show}>
-        <p> Title: {this.props.title} </p>
-            <p> Time left: {seconds} </p>
-            <div id={this.props.id}>
-            <p> Description: {this.props.descr} </p>
-            <p> Date: {this.props.time} </p>
-            <p> Song: {this.props.song} </p>
+        <h4>{this.props.title}
+            <small> Time left: {seconds} </small>
+            </h4>
+            <div className="facts" id={this.props.id}>
+            <p> <mark> Description: {this.props.descr}</mark> </p>
+            <p><i> Date: {this.props.date} </i></p>
+            <p> <i>Song: {this.props.song} </i></p>
             </div>
         </div>
         );
@@ -179,9 +180,9 @@ var Start = React.createClass({
                 var id = note.id
                 var title = note.title;
                 var descr = note.description;
-                var time = note.time;
+                var date = note.date;
                 var song = note.song;
-                return <Notification id={id} title={title} descr={descr} time={time} song={song} timeLeft={this.state.timer}/>
+                return <Notification id={id} title={title} descr={descr} date={date} song={song} timeLeft={this.state.timer}/>
             }.bind(this))}
             </div>
             </div>
