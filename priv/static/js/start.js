@@ -63,15 +63,29 @@ var Start = React.createClass({
         });
     },
 
+    getNotifications: function(){
+        var that = this;
+        $.get( "/index/notifications", function( data ) {
+            that.setState({notifications : data});
+        });
+    },
+    getSongs: function(){
+        var that = this;
+        $.get( "/index/songs", function( data ) {
+            that.setState({songs : data});
+        });
+    },
     componentDidMount: function(){
         this.timer = setInterval(this.tick, 50);
         this.dateT();
+        this.getNotifications();
+        this.getSongs();
     }, 
     
     getInitialState: function() { 
         return{
-            notifications : [{id : "1", title :"ggg", description : "laundry", time : 10, song: "ggSOng"}, {id : "2", title :"ggg", description : "laundry", time : 10, song: "ggSOng"}, {id : "3", title :"ggg", description : "laundry", time : 10, song: "ggSOng"}, {id : "4", title :"ggg", description : "laundry", time : 10, song: "ggSOng"}],
-            songs: [{name: "TestSong", artist: "testArtist"}, {name: "TestSong", artist: "testArtist"}, {name: "TestSong", artist: "testArtist"}, {name: "TestSong", artist: "testArtist"}],
+            notifications : [],
+            songs: [],
             timer: 0,
             inputDescr:"",
             inputDate: "",
