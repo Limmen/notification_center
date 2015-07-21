@@ -4635,3 +4635,237 @@
 2015-07-21 18:07:52.481 [info] <0.503.0> GET /index/notifications [notification_center] 200 5ms
 2015-07-21 18:07:52.483 [notice] <0.502.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
 2015-07-21 18:07:52.485 [info] <0.502.0> GET /index/songs [notification_center] 200 7ms
+2015-07-21 18:14:49.045 [notice] <0.512.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:14:49.045 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:14:49.046 [info] <0.512.0> Route: "/index/create"Url
+[]
+2015-07-21 18:14:49.047 [notice] <0.512.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-07-21 18:14:49.087 [info] <0.512.0> POST /index/create [notification_center] 302 42ms
+2015-07-21 18:14:49.097 [notice] <0.514.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:14:49.097 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:14:49.097 [info] <0.514.0> Route: "/index/start"Url
+[]
+2015-07-21 18:14:49.099 [notice] <0.514.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:14:49.100 [info] <0.514.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:14:52.277 [notice] <0.516.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:14:52.278 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:14:52.279 [info] <0.516.0> Route: "/index/start"Url
+[]
+2015-07-21 18:14:52.284 [notice] <0.516.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:14:52.292 [info] <0.516.0> GET /index/start [notification_center] 200 13ms
+2015-07-21 18:15:07.214 [notice] <0.520.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:15:07.216 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:15:07.217 [info] <0.520.0> Route: "/index/start"Url
+[]
+2015-07-21 18:15:07.222 [notice] <0.520.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:15:07.227 [info] <0.520.0> GET /index/start [notification_center] 200 11ms
+2015-07-21 18:16:26.049 [notice] <0.526.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:16:26.049 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:16:26.050 [info] <0.526.0> Route: "/index/start"Url
+[]
+2015-07-21 18:16:26.051 [notice] <0.526.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:16:26.052 [info] <0.526.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:17:08.581 [notice] <0.534.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:17:08.581 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:17:08.582 [info] <0.534.0> Route: "/index/start"Url
+[]
+2015-07-21 18:17:08.584 [notice] <0.534.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:17:08.585 [info] <0.534.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:23:13.293 [notice] <0.542.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:23:13.293 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:23:13.293 [info] <0.542.0> Route: "/index/start"Url
+[]
+2015-07-21 18:23:13.295 [notice] <0.542.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:23:13.296 [info] <0.542.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:25:43.652 [notice] <0.550.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:25:43.653 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:25:43.654 [info] <0.550.0> Route: "/index/start"Url
+[]
+2015-07-21 18:25:43.660 [notice] <0.550.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:25:43.663 [info] <0.550.0> GET /index/start [notification_center] 200 9ms
+2015-07-21 18:28:00.567 [notice] <0.555.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:28:00.568 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:28:00.569 [info] <0.555.0> Route: "/index/start"Url
+[]
+2015-07-21 18:28:00.572 [notice] <0.555.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:28:00.575 [info] <0.555.0> GET /index/start [notification_center] 200 7ms
+2015-07-21 18:28:01.111 [notice] <0.557.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:28:01.112 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:28:01.112 [info] <0.557.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:28:01.113 [notice] <0.557.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:28:01.114 [notice] <0.562.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:28:01.115 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:28:01.115 [info] <0.562.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:28:01.115 [info] <0.557.0> GET /index/notifications [notification_center] 200 3ms
+2015-07-21 18:28:01.117 [notice] <0.562.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:28:01.119 [info] <0.562.0> GET /index/songs [notification_center] 200 3ms
+2015-07-21 18:28:32.282 [notice] <0.567.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:28:32.282 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:28:32.283 [info] <0.567.0> Route: "/index/start"Url
+[]
+2015-07-21 18:28:32.284 [notice] <0.567.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:28:32.286 [info] <0.567.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:28:32.709 [notice] <0.574.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:28:32.710 [notice] <0.572.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:28:32.710 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:28:32.711 [info] <0.574.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:28:32.711 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:28:32.711 [info] <0.572.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:28:32.713 [notice] <0.574.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:28:32.715 [notice] <0.572.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:28:32.716 [info] <0.574.0> GET /index/notifications [notification_center] 200 5ms
+2015-07-21 18:28:32.717 [info] <0.572.0> GET /index/songs [notification_center] 200 6ms
+2015-07-21 18:32:37.515 [notice] <0.579.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:32:37.516 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:32:37.516 [info] <0.579.0> Route: "/index/start"Url
+[]
+2015-07-21 18:32:37.518 [notice] <0.579.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:32:37.519 [info] <0.579.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:32:52.480 [notice] <0.587.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:32:52.481 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:32:52.481 [info] <0.587.0> Route: "/index/start"Url
+[]
+2015-07-21 18:32:52.483 [notice] <0.587.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:32:52.484 [info] <0.587.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:32:53.017 [notice] <0.590.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:32:53.017 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:32:53.018 [info] <0.590.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:32:53.019 [notice] <0.590.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:32:53.020 [notice] <0.589.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:32:53.021 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:32:53.021 [info] <0.589.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:32:53.023 [notice] <0.589.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:32:53.025 [info] <0.589.0> GET /index/songs [notification_center] 200 4ms
+2015-07-21 18:32:53.025 [info] <0.590.0> GET /index/notifications [notification_center] 200 8ms
+2015-07-21 18:33:20.496 [notice] <0.599.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:33:20.497 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:33:20.497 [info] <0.599.0> Route: "/index/start"Url
+[]
+2015-07-21 18:33:20.499 [notice] <0.599.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:33:20.501 [info] <0.599.0> GET /index/start [notification_center] 200 4ms
+2015-07-21 18:33:21.090 [notice] <0.606.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:33:21.091 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:33:21.091 [info] <0.606.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:33:21.092 [notice] <0.605.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:33:21.094 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:33:21.094 [info] <0.605.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:33:21.099 [notice] <0.606.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:33:21.101 [notice] <0.605.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:33:21.101 [info] <0.606.0> GET /index/notifications [notification_center] 200 10ms
+2015-07-21 18:33:21.102 [info] <0.605.0> GET /index/songs [notification_center] 200 9ms
+2015-07-21 18:33:36.497 [notice] <0.611.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:33:36.499 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:33:36.500 [info] <0.611.0> Route: "/index/start"Url
+[]
+2015-07-21 18:33:36.503 [notice] <0.611.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:33:36.506 [info] <0.611.0> GET /index/start [notification_center] 200 7ms
+2015-07-21 18:33:37.044 [notice] <0.614.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:33:37.045 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:33:37.045 [notice] <0.615.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:33:37.045 [info] <0.614.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:33:37.046 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:33:37.046 [info] <0.615.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:33:37.049 [notice] <0.614.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:33:37.050 [notice] <0.615.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:33:37.052 [info] <0.614.0> GET /index/notifications [notification_center] 200 6ms
+2015-07-21 18:33:37.054 [info] <0.615.0> GET /index/songs [notification_center] 200 7ms
+2015-07-21 18:35:17.239 [notice] <0.622.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:35:17.240 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:35:17.240 [info] <0.622.0> Route: "/index/start"Url
+[]
+2015-07-21 18:35:17.243 [notice] <0.622.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:35:17.246 [info] <0.622.0> GET /index/start [notification_center] 200 6ms
+2015-07-21 18:35:17.798 [notice] <0.627.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:35:17.798 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:35:17.798 [info] <0.627.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:35:17.799 [notice] <0.626.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:35:17.800 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:35:17.802 [notice] <0.627.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:35:17.802 [info] <0.626.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:35:17.804 [info] <0.627.0> GET /index/notifications [notification_center] 200 6ms
+2015-07-21 18:35:17.806 [notice] <0.626.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:35:17.808 [info] <0.626.0> GET /index/songs [notification_center] 200 7ms
+2015-07-21 18:36:13.330 [notice] <0.632.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:36:13.330 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:36:13.330 [info] <0.632.0> Route: "/index/start"Url
+[]
+2015-07-21 18:36:13.332 [notice] <0.632.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:36:13.334 [info] <0.632.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:36:13.808 [notice] <0.636.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:36:13.808 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:36:13.808 [notice] <0.637.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:36:13.809 [info] <0.636.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:36:13.809 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:36:13.810 [info] <0.637.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:36:13.811 [notice] <0.636.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:36:13.814 [info] <0.636.0> GET /index/notifications [notification_center] 200 6ms
+2015-07-21 18:36:13.815 [notice] <0.637.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:36:13.824 [info] <0.637.0> GET /index/songs [notification_center] 200 14ms
+2015-07-21 18:38:33.866 [notice] <0.642.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:38:33.866 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:38:33.866 [info] <0.642.0> Route: "/index/start"Url
+[]
+2015-07-21 18:38:33.868 [notice] <0.642.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:38:33.869 [info] <0.642.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:38:34.397 [notice] <0.645.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:38:34.397 [notice] <0.644.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:38:34.398 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:38:34.398 [info] <0.645.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:38:34.398 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:38:34.399 [info] <0.644.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:38:34.401 [notice] <0.645.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:38:34.403 [info] <0.645.0> GET /index/notifications [notification_center] 200 5ms
+2015-07-21 18:38:34.406 [notice] <0.644.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:38:34.410 [info] <0.644.0> GET /index/songs [notification_center] 200 11ms
+2015-07-21 18:46:08.832 [notice] <0.654.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:46:08.832 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:46:08.833 [info] <0.654.0> Route: "/index/start"Url
+[]
+2015-07-21 18:46:08.834 [notice] <0.654.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:46:08.836 [info] <0.654.0> GET /index/start [notification_center] 200 3ms
+2015-07-21 18:46:09.322 [notice] <0.656.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:46:09.323 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:46:09.324 [notice] <0.659.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:46:09.324 [info] <0.656.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:46:09.325 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:46:09.325 [info] <0.659.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:46:09.327 [notice] <0.656.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:46:09.328 [notice] <0.659.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:46:09.329 [info] <0.659.0> GET /index/songs [notification_center] 200 4ms
+2015-07-21 18:46:09.329 [info] <0.656.0> GET /index/notifications [notification_center] 200 6ms
+2015-07-21 18:48:08.680 [notice] <0.666.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:48:08.681 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:48:08.682 [info] <0.666.0> Route: "/index/start"Url
+[]
+2015-07-21 18:48:08.687 [notice] <0.666.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:48:08.692 [info] <0.666.0> GET /index/start [notification_center] 200 10ms
+2015-07-21 18:48:09.221 [notice] <0.668.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:48:09.221 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:48:09.222 [notice] <0.672.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath notification_center
+2015-07-21 18:48:09.222 [info] <0.668.0> Route: "/index/notifications"Url
+[]
+2015-07-21 18:48:09.223 [info] <0.269.0> Loading routes from "/home/kim/workspace/erlangprojects/notification_center/priv/notification_center.routes" ....
+2015-07-21 18:48:09.224 [info] <0.672.0> Route: "/index/songs"Url
+[]
+2015-07-21 18:48:09.226 [notice] <0.668.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:48:09.227 [notice] <0.672.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-07-21 18:48:09.229 [info] <0.672.0> GET /index/songs [notification_center] 200 6ms
+2015-07-21 18:48:09.229 [info] <0.668.0> GET /index/notifications [notification_center] 200 8ms

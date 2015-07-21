@@ -81,8 +81,18 @@ var Start = React.createClass({
         this.dateT();
         this.getNotifications();
         this.getSongs();
+        
+        $("#success").hide();
+        $("#fail").hide();        
     }, 
-    
+    success: function(){
+        $("#success").show();        
+        $('#success').delay(2000).fadeOut(400);
+    },
+    fail: function(){
+        $("#fail").show();        
+        $('#fail').delay(2000).fadeOut(400);
+    },
     getInitialState: function() { 
         return{
             notifications : [],
@@ -94,17 +104,45 @@ var Start = React.createClass({
             inputSongs:""
         };
     },
-
+    validate: function(title, date){
+        if(
+            (typeof(title) !== "undefined" && title !== null && title !== "") &&
+            (typeof(date) !== "undefined" && date !== null && date !== "")
+        ){
+            console.log("valid!");
+            return true;
+//            var regExp = new RegExp("^(([0]?[1-9]|1[0-2])-([0-2]?[0-9]|3[0-1])-[1-2]\d{3}) (20|21|22|23|[0-1]?\d{1}):([0-5]?\d{1})$");
+  //          if(date.match(regExp)){
+    //            console.log("truee");
+      //          return true;
+        //    }
+          //  else{
+            //    console.log("falsee");
+              //  return false;
+//            }
+        }
+        else{
+            console.log("Not valid!");
+            return false;
+        }
+        
+    },
     newEvent: function(){
         var title = this.state.inputTitle;
         var descr = this.state.inputDescr;
         var dateTime = $("#datetimepicker2").find("input").val();
         var song = this.state.inputSongs;
-
+        var bool = this.validate(title,dateTime);
+        if(bool){
+            this.success();
+        }
+        else{
+            this.fail();
+        }
         this.setState({inputTitle : "", inputDescr : "", inputSongs : ""});
-        $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
-            console.log("posted!");
-        });
+//        $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
+  //          console.log("posted!");
+//        });
         
     },
     descrChange: function(e){
@@ -169,8 +207,9 @@ var Start = React.createClass({
             }.bind(this))}
             </select>
             </div>            
-            <button type="submit" className="btn btn-default" onClick={this.newEvent}>Submit</button> 
-            
+            <button type="submit" className="btn btn-default" onClick={this.newEvent}>Submit</button>
+            <div id="success" className="alert alert-success" role="alert"><strong>Event successfully saved</strong></div>
+            <div id="fail" className="alert alert-danger" role="alert"><strong>Error, please check that you wrote correct parameters</strong></div>
             </div>
             
             <div className="col-sm-5">
