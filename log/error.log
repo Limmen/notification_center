@@ -726,3 +726,43 @@
 2015-07-19 16:10:46.574 [error] <0.13748.0> gen_server <0.13748.0> terminated with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84
 2015-07-19 16:10:46.574 [error] <0.13748.0> CRASH REPORT Process <0.13748.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in gen_server:terminate/6 line 746
 2015-07-19 16:10:46.575 [error] <0.102.0> Supervisor {<0.102.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.13748.0> exit with reason no match of right hand value {error,econnrefused} in boss_db_adapter_mongodb:make_read_connection/2 line 84 in context child_terminated
+2015-07-22 17:25:19.449 [error] <0.294.0> GET / [notification_center] 404 1ms
+2015-07-22 17:25:27.042 [error] <0.311.0> GET / [notification_center] 404 0ms
+2015-07-22 17:26:15.259 [error] <0.269.0> gen_server <0.269.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2015-07-22 17:26:15.260 [error] <0.269.0> CRASH REPORT Process <0.269.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 746
+2015-07-22 17:26:15.261 [error] <0.268.0> Supervisor {<0.268.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,notification_center},{controllers,["notification_center_index_controller"]}]) at <0.269.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2015-07-22 17:26:15.463 [error] <0.317.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,
+          [{erlang,list_to_atom,[undefined],[]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,172}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},
+      {gen_server,call,[<0.269.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,245}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-07-22 17:26:16.038 [error] <0.322.0> gen_server <0.322.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2015-07-22 17:26:16.039 [error] <0.322.0> CRASH REPORT Process <0.322.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 746
+2015-07-22 17:26:16.039 [error] <0.268.0> Supervisor {<0.268.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,notification_center},{controllers,["notification_center_index_controller"]}]) at <0.322.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2015-07-22 17:26:16.039 [error] <0.319.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,
+          [{erlang,list_to_atom,[undefined],[]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,172}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},
+      {gen_server,call,[<0.322.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,245}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-07-22 17:26:17.251 [error] <0.326.0> gen_server <0.326.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2015-07-22 17:26:17.252 [error] <0.326.0> CRASH REPORT Process <0.326.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 746
+2015-07-22 17:26:17.252 [error] <0.268.0> Supervisor {<0.268.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,notification_center},{controllers,["notification_center_index_controller"]}]) at <0.326.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2015-07-22 17:26:17.253 [error] <0.324.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,
+          [{erlang,list_to_atom,[undefined],[]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,172}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},
+      {gen_server,call,[<0.326.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,245}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-07-22 17:28:40.177 [error] <0.373.0> GET /start/index [notification_center] 404 0ms
+2015-07-22 17:28:43.349 [error] <0.374.0> GET /start/index [notification_center] 404 1ms

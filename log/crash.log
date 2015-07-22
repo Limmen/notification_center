@@ -2578,3 +2578,92 @@ GET /index/create [notification_center] 500 4ms2015-07-19 14:21:06 =ERROR REPORT
 ** When Server state == {state,connecting,1,undefined,[{name,{local,boss_db_pool}},{worker_module,boss_db_controller},{size,5},{max_overflow,10},{adapter,mongodb},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_database,"notification_center"},{db_host,"localhost"},{db_port,1978}],boss_db_adapter_mongodb,undefined,undefined,[],{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},false,60,db,0}
 ** Reason for termination == 
 ** {{badmatch,{error,econnrefused}},[{boss_db_adapter_mongodb,make_read_connection,2,[{file,"src/db_adapters/boss_db_adapter_mongodb.erl"},{line,84}]},{boss_db_adapter_mongodb,init,1,[{file,"src/db_adapters/boss_db_adapter_mongodb.erl"},{line,52}]},{boss_db_controller,connections_for_adapter,2,[{file,"src/boss_db_controller.erl"},{line,38}]},{boss_db_controller,handle_cast,2,[{file,"src/boss_db_controller.erl"},{line,218}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-22 17:25:19 =ERROR REPORT====
+GET / [notification_center] 404 1ms2015-07-22 17:25:27 =ERROR REPORT====
+GET / [notification_center] 404 0ms2015-07-22 17:26:15 =ERROR REPORT====
+** Generic server <0.269.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,notification_center,["notification_center_index_controller"],45087,49184,53281}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-22 17:26:15 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.269.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.268.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.268.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 11462
+  neighbours:
+2015-07-22 17:26:15 =SUPERVISOR REPORT====
+     Supervisor: {<0.268.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.269.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,notification_center},{controllers,["notification_center_index_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-22 17:26:16 =ERROR REPORT====
+** Generic server <0.322.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,notification_center,["notification_center_index_controller"],57377,61472,65567}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-22 17:26:16 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.322.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.268.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.268.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 3373
+  neighbours:
+2015-07-22 17:26:16 =SUPERVISOR REPORT====
+     Supervisor: {<0.268.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.322.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,notification_center},{controllers,["notification_center_index_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-22 17:26:17 =ERROR REPORT====
+** Generic server <0.326.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,notification_center,["notification_center_index_controller"],69663,73760,77857}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-07-22 17:26:17 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.326.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.268.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.268.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 3372
+  neighbours:
+2015-07-22 17:26:17 =SUPERVISOR REPORT====
+     Supervisor: {<0.268.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.326.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,notification_center},{controllers,["notification_center_index_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-07-22 17:28:40 =ERROR REPORT====
+GET /start/index [notification_center] 404 0ms2015-07-22 17:28:43 =ERROR REPORT====
+GET /start/index [notification_center] 404 1ms
