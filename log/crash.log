@@ -2666,4 +2666,23 @@ GET / [notification_center] 404 0ms2015-07-22 17:26:15 =ERROR REPORT====
 
 2015-07-22 17:28:40 =ERROR REPORT====
 GET /start/index [notification_center] 404 0ms2015-07-22 17:28:43 =ERROR REPORT====
-GET /start/index [notification_center] 404 1ms
+GET /start/index [notification_center] 404 1ms2015-07-22 20:55:07 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-22 20:55:07 =ERROR REPORT====
+GET /index/notifications [notification_center] 500 101ms2015-07-22 20:55:08 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-22 20:55:08 =ERROR REPORT====
+GET /index/notifications [notification_center] 500 7ms2015-07-22 20:55:14 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-22 20:55:14 =ERROR REPORT====
+GET /index/notifications [notification_center] 500 3ms2015-07-22 21:00:44 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-22 21:00:45 =ERROR REPORT====
+GET /index/notifications [notification_center] 500 147ms2015-07-22 21:00:47 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-22 21:00:47 =ERROR REPORT====
+GET /index/notifications [notification_center] 500 10ms2015-07-23 17:36:14 =ERROR REPORT====
+GET /gg [notification_center] 404 24ms2015-07-23 17:37:00 =ERROR REPORT====
+GET /gg [notification_center] 404 35ms2015-07-23 17:37:02 =ERROR REPORT====
+GET /gg [notification_center] 404 12ms2015-07-23 17:37:22 =ERROR REPORT====
+GET /gg [notification_center] 404 52ms

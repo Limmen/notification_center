@@ -11,6 +11,9 @@ start('GET', [])->
 %%     {json, Notifications}.
 
 notifications('GET', [])->
+    io:format(" ~n ~n WHere is ALARM! ~n ~n"),
+    Result = whereis(alarm),
+    io:format(" ~n ~n Here: ~p ~n ~n", [Result]),    
     io:format(" ~n ~n Post/GET request!  ~n ~n"),
     Notifications = boss_db:find(notification, []),
     io:format("~n ~n Noti: ~p  ~n ~n", [Notifications]),
