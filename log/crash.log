@@ -2685,4 +2685,7 @@ GET /index/notifications [notification_center] 500 10ms2015-07-23 17:36:14 =ERRO
 GET /gg [notification_center] 404 24ms2015-07-23 17:37:00 =ERROR REPORT====
 GET /gg [notification_center] 404 35ms2015-07-23 17:37:02 =ERROR REPORT====
 GET /gg [notification_center] 404 12ms2015-07-23 17:37:22 =ERROR REPORT====
-GET /gg [notification_center] 404 52ms
+GET /gg [notification_center] 404 52ms2015-07-24 19:05:04 =ERROR REPORT====
+** Connection attempt from disallowed node kimpa@limmen ** 
+2015-07-24 19:07:24 =ERROR REPORT====
+** Connection attempt from disallowed node kimpa@limmen ** 

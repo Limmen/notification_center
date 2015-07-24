@@ -801,3 +801,7 @@
 2015-07-23 17:37:00.780 [error] <0.327.0> GET /gg [notification_center] 404 35ms
 2015-07-23 17:37:02.185 [error] <0.330.0> GET /gg [notification_center] 404 12ms
 2015-07-23 17:37:22.129 [error] <0.338.0> GET /gg [notification_center] 404 52ms
+2015-07-24 19:05:04.556 [error] <0.287.0> ** Connection attempt from disallowed node kimpa@limmen ** 
+
+2015-07-24 19:07:24.698 [error] <0.289.0> ** Connection attempt from disallowed node kimpa@limmen ** 
+
