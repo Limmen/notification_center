@@ -41,9 +41,7 @@ init([]) ->
     %one_for_one means that if a child terminates only that child will be restarted, not all.
     Flags = #supflags{strategy = one_for_one, intensity = 1, period = 3},
     SupFlags = {Flags#supflags.strategy, Flags#supflags.intensity, Flags#supflags.period},
-    
-    io:format("Supflags is: ~n ~p ~n  ", [SupFlags]),
-    
+        
     %permanent restart defines that the child process should always be restarted.
     %shutdown = brutal_kill means we don't care about giving the server time to terminate,
     % we kill it in a  ruthless manner.
@@ -75,6 +73,7 @@ init([]) ->
                             Event_SupervisorSpec#childspecs.shutdown,
                             Event_SupervisorSpec#childspecs.type,
                             Event_SupervisorSpec#childspecs.modules},
+
 
     {ok, { SupFlags, [ServerChild, Event_SupervisorChild]} }.
 

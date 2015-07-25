@@ -1,6 +1,9 @@
 -module(notification_server_eventsup).
 
--behaviour(gen_supervisor).
+-behaviour(supervisor).
+
+%% API
+-export([start_link/0]).
 
 %% Supervisor callbacks
 -export([init/1]).
@@ -18,6 +21,7 @@
 
 %% Results in a call to init/1
 start_link() ->
+    io:format("Event supervisor trying to start up ~n ~n"),
     supervisor:start_link({local, ?SERVER}, ?MODULE, []).
 
 

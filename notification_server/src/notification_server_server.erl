@@ -34,23 +34,31 @@ stop()->
 %% Server callbacks
 %%====================================================================
 
+%% Expected to return {ok, State}
 init([])->
-    io:format("Init! ~n ~n").
+    io:format("Init! ~n ~n"),
+    {ok, []}.
 
+%% Expected to return {reply, Reply, NewState}
 handle_call(_,_,_)->
     io:format("handle call ~n ~n").
 
+%% Expected to return {noreply, NewState}
 handle_cast(_,_)->
     io:format("handle cast ~n ~n").
 
+%% Expexted to return {noreply, NewState}
 handle_info(Info,State)->
     io:format("handle info ~n ~n"),
     {noreply, State}.
 
+%% This function should never be called since we are a part of a supervisor tree.
+%% The supervisor will handle termination.
 terminate(Reason, State)->
     io:format("terminate ~n"),
     ok.
 
+%% Exptexted to return {ok, NewState}
 code_change(OldVsn, State, Extra)->    
     {ok, State}.
 
