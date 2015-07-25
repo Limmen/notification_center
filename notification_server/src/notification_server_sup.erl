@@ -75,7 +75,21 @@ init([]) ->
                             Event_SupervisorSpec#childspecs.modules},
 
 
-    {ok, { SupFlags, [ServerChild, Event_SupervisorChild]} }.
+    ListenerSpec = #childspecs{id = listener,
+                            start = {notification_server_listener, listen, []},
+                            restart = permanent,
+                            shutdown = brutal_kill,
+                            type = worker,
+                            modules = [notification_server_listener]},
+    ListenerChild = {ListenerSpec#childspecs.id,
+                            ListenerSpec#childspecs.start,
+                            ListenerSpec#childspecs.restart,
+                            ListenerSpec#childspecs.shutdown,
+                            ListenerSpec#childspecs.type,
+                            ListenerSpec#childspecs.modules},
+
+
+    {ok, { SupFlags, [ServerChild, Event_SupervisorChild, ListenerChild]} }.
 
 %%====================================================================
 %% Internal functions

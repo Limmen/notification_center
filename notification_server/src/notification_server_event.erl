@@ -1,15 +1,15 @@
 -module(notification_server_event).
 
 %% API
--export([start/0]).
+-export([start/1]).
 
 
 %%====================================================================
 %% API
 %%====================================================================
 
-start()->
-    io:format("event worker started ~n ~n"),
+start(Event)->
+    io:format("event worker started with this event: ~p ~n ~n", [Event]),
     receive
         _ ->
             ok

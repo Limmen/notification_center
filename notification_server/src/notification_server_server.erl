@@ -9,7 +9,7 @@
 -export([start_link/0, stop/0]).
 
 %%Internal functions
--export([spawn_event/0, update_events/0]).
+-export([spawn_event/1, update_events/0]).
 
 
 %%====================================================================
@@ -37,11 +37,18 @@ stop()->
 %% Expected to return {ok, State}
 init([])->
     io:format("Init! ~n ~n"),
-    {ok, []}.
+    Table = ets:new(events, [set, named_table]),
+    {ok, Table}.
 
 %% Expected to return {reply, Reply, NewState}
-handle_call(_,_,_)->
-    io:format("handle call ~n ~n").
+handle_call({new_event, Event},From,State)->
+    io:format("handle call ~n ~n"),
+    Id = make_ref(),
+    notification_server_eventsup:add_event({Id, Event}),
+    ets:insert(events,{Id, Event}),
+    io:format("Process spawned and inserted in ETS ~n ~n"),
+    {reply, ok, State}.
+
 
 %% Expected to return {noreply, NewState}
 handle_cast(_,_)->
@@ -66,8 +73,9 @@ code_change(OldVsn, State, Extra)->
 %% Internal functions
 %%====================================================================
 
-spawn_event()->
-    io:format("spawn_event ~n ~n").
+spawn_event(Event)->
+    io:format("spawn_event ~n ~n"),
+    gen_server:call(?MODULE, {new_event, Event}).
 
 update_events()->
     io:format("update events ~n ~n").

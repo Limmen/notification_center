@@ -8,6 +8,9 @@
 %% Supervisor callbacks
 -export([init/1]).
 
+%% Internal functions
+-export([add_event/1]).
+
 -define(SERVER, ?MODULE).
 
 %% Records
@@ -33,9 +36,12 @@ init([]) ->
 
     io:format("Child supervisor starting ~n ~n"),
     
+    
+    %simple_one_for_one means that all child processes will be started dynamicly on call to
+    %supervisor:start_child/2. 
     %If child dies more than 1 time per 3 seconds, terminate.
     %one_for_one means that if a child terminates only that child will be restarted, not all.
-    Flags = #supflags{strategy = one_for_one, intensity = 1, period = 3},
+    Flags = #supflags{strategy = simple_one_for_one, intensity = 1, period = 3},
     SupFlags = {Flags#supflags.strategy, Flags#supflags.intensity, Flags#supflags.period},
     
     %permanent restart defines that the child process should always be restarted.
@@ -61,3 +67,8 @@ init([]) ->
 %%====================================================================
 %% Internal functions
 %%====================================================================
+
+add_event(Event)->
+    io:format("eventsup received request to start new Event. Event: ~p ~n ~n", [Event]),
+    supervisor:start_child(notification_server_eventsup,Event).
+    
