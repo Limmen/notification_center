@@ -805,3 +805,4 @@
 
 2015-07-24 19:07:24.698 [error] <0.289.0> ** Connection attempt from disallowed node kimpa@limmen ** 
 
+2015-07-25 07:34:00.629 [error] <0.297.0> GET /gg [notification_center] 404 7ms

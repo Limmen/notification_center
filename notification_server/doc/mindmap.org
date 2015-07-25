@@ -61,5 +61,5 @@
 #+end_src
 
 #+RESULTS:
-[[file:mindmap.org]]
+[[file:mindmap.png]]
 
