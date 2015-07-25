@@ -9,7 +9,7 @@
 -export([start_link/0, stop/0]).
 
 %%Internal functions
--export([spawn_event/1, update_events/0]).
+-export([spawn_event/1, remove_event/1]).
 
 
 %%====================================================================
@@ -35,24 +35,33 @@ stop()->
 %%====================================================================
 
 %% Expected to return {ok, State}
+%% New ets set-table is created for the servers internal state.
+%% Primary key defaults to first position in every element (tuple).
 init([])->
     io:format("Init! ~n ~n"),
     Table = ets:new(events, [set, named_table]),
     {ok, Table}.
 
 %% Expected to return {reply, Reply, NewState}
-handle_call({new_event, Event},From,State)->
-    io:format("handle call ~n ~n"),
+handle_call(_,_,_)->
+    io:format("handle call ~n ~n").
+
+%% Expected to return {noreply, NewState}
+handle_cast({new_event, Event},State)->
+    io:format("handle cast ~n ~n"),
     Id = make_ref(),
     notification_server_eventsup:add_event({Id, Event}),
     ets:insert(events,{Id, Event}),
     io:format("Process spawned and inserted in ETS ~n ~n"),
-    {reply, ok, State}.
+    {noreply,State};
 
+handle_cast({remove_event, {Id, Event}},State)->
+    io:format("handle cast ~n ~n"),
+    notification_server_eventsup:remove_event(Id),
+    ets:delete(events,Id),
+    io:format("Process killed and entry in ETS removed ~n ~n"),
+    {noreply,State}.
 
-%% Expected to return {noreply, NewState}
-handle_cast(_,_)->
-    io:format("handle cast ~n ~n").
 
 %% Expexted to return {noreply, NewState}
 handle_info(Info,State)->
@@ -75,7 +84,8 @@ code_change(OldVsn, State, Extra)->
 
 spawn_event(Event)->
     io:format("spawn_event ~n ~n"),
-    gen_server:call(?MODULE, {new_event, Event}).
+    gen_server:cast(?MODULE, {new_event, Event}).
 
-update_events()->
-    io:format("update events ~n ~n").
+remove_event(Event)->
+    io:format("remove event ~n ~n"),
+    gen_server:cast(?MODULE, {remove_event, Event}).

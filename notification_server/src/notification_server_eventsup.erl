@@ -9,7 +9,7 @@
 -export([init/1]).
 
 %% Internal functions
--export([add_event/1]).
+-export([add_event/1, remove_event/1]).
 
 -define(SERVER, ?MODULE).
 
@@ -70,5 +70,10 @@ init([]) ->
 
 add_event(Event)->
     io:format("eventsup received request to start new Event. Event: ~p ~n ~n", [Event]),
-    supervisor:start_child(notification_server_eventsup,Event).
+    supervisor:start_child(notification_server_eventsup,[Event]).
+
+remove_event(Id)->
+    io:format("eventsup received request to remove a Event. ~n ~n"),
+    supervisor:delete_child(notification_server_eventsup,Id).
+    
     

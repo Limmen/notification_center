@@ -25,7 +25,7 @@
 
 %% Results in a call to init/1
 start_link() ->
-    supervisor:start_link({local, ?SERVER}, ?MODULE, []).
+    supervisor:start_link({global, ?SERVER}, ?MODULE, []).
 
 %%====================================================================
 %% Supervisor callbacks
@@ -76,7 +76,7 @@ init([]) ->
 
 
     ListenerSpec = #childspecs{id = listener,
-                            start = {notification_server_listener, listen, []},
+                            start = {notification_server_listener, start, []},
                             restart = permanent,
                             shutdown = brutal_kill,
                             type = worker,
