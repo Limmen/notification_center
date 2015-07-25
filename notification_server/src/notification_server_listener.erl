@@ -14,7 +14,6 @@ start()->
 
 listen()->
     io:format("listener up and listening ~n ~n"),
-    io:format("Listener PID is: ~p ~n ~n", [self()]),
     receive
         {new_event, Event} ->
             io:format("Listener Received newevent! ~n ~n"),
@@ -23,6 +22,11 @@ listen()->
         {remove_event, Event} ->
             notification_server_server:remove_event(Event),
             listen();
+        {get_events}->
+            io:format("get events ~n ~n"),
+            Events = notification_server_server:get_events(),
+            io:format("listener received events: ~p ~n ~n ", [Events]),
+            listen();            
         _  -> 
             io:format("Listener received something random ~n ~n"),
             listen()

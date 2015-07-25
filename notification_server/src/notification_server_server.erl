@@ -9,7 +9,7 @@
 -export([start_link/0, stop/0]).
 
 %%Internal functions
--export([spawn_event/1, remove_event/1]).
+-export([spawn_event/1, remove_event/1, get_events/0]).
 
 
 %%====================================================================
@@ -43,16 +43,20 @@ init([])->
     {ok, Table}.
 
 %% Expected to return {reply, Reply, NewState}
-handle_call(_,_,_)->
-    io:format("handle call ~n ~n").
+handle_call({get_events},From,State)->
+    io:format("handle call ~n ~n"),
+    Events = ets:foldl(fun(X, A)-> [X|A]  end, [], events),
+    io:format("Events: ~p ~n ~n", [Events]),
+    {reply, ok, State}.
 
 %% Expected to return {noreply, NewState}
 handle_cast({new_event, Event},State)->
     io:format("handle cast ~n ~n"),
     Id = make_ref(),
-    notification_server_eventsup:add_event({Id, Event}),
+    spawn(fun()->notification_server_eventsup:add_event({Id, Event}) end),
+    io:format("Handle_Cast have started event process ~n ~n"),
     ets:insert(events,{Id, Event}),
-    io:format("Process spawned and inserted in ETS ~n ~n"),
+    io:format("Handle_cast have inserted event in ETS ~n ~n"),
     {noreply,State};
 
 handle_cast({remove_event, {Id, Event}},State)->
@@ -89,3 +93,6 @@ spawn_event(Event)->
 remove_event(Event)->
     io:format("remove event ~n ~n"),
     gen_server:cast(?MODULE, {remove_event, Event}).
+
+get_events()->
+    gen_server:call(?MODULE, {get_events}).
