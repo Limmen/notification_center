@@ -47,7 +47,7 @@ handle_call({get_events},From,State)->
     io:format("handle call ~n ~n"),
     Events = ets:foldl(fun(X, A)-> [X|A]  end, [], events),
     io:format("Events: ~p ~n ~n", [Events]),
-    {reply, ok, State}.
+    {reply, Events, State}.
 
 %% Expected to return {noreply, NewState}
 handle_cast({new_event, Event},State)->
@@ -61,7 +61,7 @@ handle_cast({new_event, Event},State)->
 
 handle_cast({remove_event, {Id, Event}},State)->
     io:format("handle cast ~n ~n"),
-    notification_server_eventsup:remove_event(Id),
+    spawn(fun()->notification_server_eventsup:remove_event(Id) end),
     ets:delete(events,Id),
     io:format("Process killed and entry in ETS removed ~n ~n"),
     {noreply,State}.
