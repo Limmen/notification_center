@@ -2694,3 +2694,10 @@ GET /gg [notification_center] 404 7ms2015-07-25 21:07:53 =ERROR REPORT====
 ** Connection attempt from disallowed node event_server@limmen ** 
 2015-07-25 21:08:21 =ERROR REPORT====
 ** Connection attempt from disallowed node event_server@limmen ** 
+2015-07-26 10:05:40 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-26 10:05:40 =ERROR REPORT====
+GET /index/notifications [notification_center] 500 697ms2015-07-26 10:05:41 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-07-26 10:05:41 =ERROR REPORT====
+GET /index/notifications [notification_center] 500 7ms

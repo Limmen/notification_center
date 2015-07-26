@@ -12,7 +12,14 @@ start('GET', [])->
 
 notifications('GET', [])->
     io:format(" ~n ~n Post/GET request!  ~n ~n"),
-    {notification_server_worker, event_server@limmen} ! {get_events},
+    io:format("My PID is: ~p ~n ~n",[self()]),
+    Pid = self(),
+    {notification_server_worker, event_server@limmen} ! {get_events, Pid},
+    receive
+        Events ->
+            io:format("yo, received events here! ~p ~n ~n",[Events]);
+        _ -> io:format("received smth random  ~n ~n")
+                end,            
     Notifications = boss_db:find(notification, []),
     io:format("~n ~n Noti: ~p  ~n ~n", [Notifications]),
     {json, Notifications}.

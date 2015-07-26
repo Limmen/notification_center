@@ -23,10 +23,11 @@ listen()->
             io:format("Remove element ~n ~n"),
 %            notification_server_server:remove_event(Event),
             listen();
-        {get_events}->
+        {get_events, From}->
             io:format("Listener received get events ~n ~n"),
             Events = notification_server_server:get_events(),
             io:format("listener received events: ~p ~n ~n ", [Events]),
+            From ! Events,
             listen();            
         _  -> 
             io:format("Listener received something random ~n ~n"),
