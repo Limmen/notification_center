@@ -8,19 +8,21 @@ var Notification = React.createClass({
         }
     },
     componentDidMount: function(){
-        var id_div = "#" + this.props.id
-        console.log(this.props.id);
+        var id_div = "#" + this.props.nr;
+        console.log(this.props.nr);
         $(id_div).hide();
     }, 
 
     show: function(){
-        var id_div = "#" + this.props.id
+        var id_div = "#" + this.props.nr;
         console.log("Show!");
         if(this.state.hidden){
+            console.log("Showing");
             $(id_div).show();
             this.setState({hidden : false});
         }
         else{
+            console.log("Hiding");
             $(id_div).hide();
             this.setState({hidden : true});
         }
@@ -36,7 +38,7 @@ var Notification = React.createClass({
         <h4>{this.props.title}
             <small> Time left: {seconds} </small>
             </h4>
-            <div className="facts" id={this.props.id}>
+            <div className="facts" id={this.props.nr}>
             <p> <mark> Description: {this.props.descr}</mark> </p>
             <p><i> Date: {this.props.date} </i></p>
             <p> <i>Song: {this.props.song} </i></p>
@@ -159,7 +161,6 @@ var Start = React.createClass({
         console.log("DateChange");
         this.setState({inputDate : e.target.value});
     },
-    
     render: function() {
         return (
             <div>
@@ -215,13 +216,14 @@ var Start = React.createClass({
             <div className="col-sm-5">
             <div className="list-group">
             <h2> Upcoming events </h2>
-            {this.state.notifications.map(function(note) {
-                var id = note.id
+            {this.state.notifications.map(function(note, i) {
+                var nr = "id-" + i;
+                var id = note.id;
                 var title = note.title;
                 var descr = note.description;
                 var date = note.date;
                 var song = note.song;
-                return <Notification id={id} title={title} descr={descr} date={date} song={song} timeLeft={this.state.timer}/>
+                return <Notification nr={nr} id={id} title={title} descr={descr} date={date} song={song} timeLeft={this.state.timer}/>
             }.bind(this))}
             </div>
             </div>

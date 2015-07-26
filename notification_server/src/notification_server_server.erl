@@ -39,7 +39,7 @@ stop()->
 %% Primary key defaults to first position in every element (tuple).
 init([])->
     io:format("Init! ~n ~n"),
-    Table = ets:new(events, [set, named_table]),
+    Table = ets:new(events, [set, named_table, {keypos, 2}]),
     {ok, Table}.
 
 %% Expected to return {reply, Reply, NewState}
@@ -50,12 +50,14 @@ handle_call({get_events},From,State)->
     {reply, Events, State}.
 
 %% Expected to return {noreply, NewState}
-handle_cast({new_event, Event},State)->
+handle_cast({new_event,{Title,DateTime,Description,Song}},State)->
     io:format("handle cast ~n ~n"),
-    Id = make_ref(),
-    spawn(fun()->notification_server_eventsup:add_event({Id, Event}) end),
+    Id = io_lib:format("~p",[term_to_binary(make_ref())]),
+%    Id = make_ref(),
+    Event = {notification,Id,Title,DateTime,Description,Song},
+    spawn(fun()->notification_server_eventsup:add_event(Event) end),
     io:format("Handle_Cast have started event process ~n ~n"),
-    ets:insert(events,{Id, Event}),
+    ets:insert(events,Event),
     io:format("Handle_cast have inserted event in ETS ~n ~n"),
     {noreply,State};
 
