@@ -140,9 +140,9 @@ var Start = React.createClass({
             this.fail();
         }
         this.setState({inputTitle : "", inputDescr : "", inputSongs : ""});
-//        $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
-  //          console.log("posted!");
-//        });
+        $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
+            console.log("posted!");
+        });
         
     },
     descrChange: function(e){

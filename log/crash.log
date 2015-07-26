@@ -2690,4 +2690,7 @@ GET /gg [notification_center] 404 52ms2015-07-24 19:05:04 =ERROR REPORT====
 2015-07-24 19:07:24 =ERROR REPORT====
 ** Connection attempt from disallowed node kimpa@limmen ** 
 2015-07-25 07:34:00 =ERROR REPORT====
-GET /gg [notification_center] 404 7ms
+GET /gg [notification_center] 404 7ms2015-07-25 21:07:53 =ERROR REPORT====
+** Connection attempt from disallowed node event_server@limmen ** 
+2015-07-25 21:08:21 =ERROR REPORT====
+** Connection attempt from disallowed node event_server@limmen ** 

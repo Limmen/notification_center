@@ -32,6 +32,7 @@ case "${1:-''}" in
         
   'start-dev')
         # Start Boss in development mode
+        echo "startin boss in dev mode..."
         START_DEV=$(./rebar boss c=start_dev_cmd|grep -v "==>")
         do_start "$START_DEV"
         ;;

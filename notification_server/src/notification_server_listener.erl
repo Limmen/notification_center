@@ -20,10 +20,11 @@ listen()->
             notification_server_server:spawn_event(Event),
             listen();
         {remove_event, Event} ->
-            notification_server_server:remove_event(Event),
+            io:format("Remove element ~n ~n"),
+%            notification_server_server:remove_event(Event),
             listen();
         {get_events}->
-            io:format("get events ~n ~n"),
+            io:format("Listener received get events ~n ~n"),
             Events = notification_server_server:get_events(),
             io:format("listener received events: ~p ~n ~n ", [Events]),
             listen();            
