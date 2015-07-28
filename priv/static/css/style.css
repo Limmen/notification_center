@@ -19,3 +19,16 @@ body
 {
     
 }
+
+.delete
+{
+    text-align: right;
+    align: right;
+    float:right;
+}
+
+.glyphicon-remove:hover
+{
+    color: red;
+}
+

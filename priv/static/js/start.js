@@ -13,7 +13,7 @@ var Notification = React.createClass({
         $(id_div).hide();
     }, 
 
-    show: function(){
+    show: function(event){
         var id_div = "#" + this.props.nr;
         console.log("Show!");
         if(this.state.hidden){
@@ -27,6 +27,10 @@ var Notification = React.createClass({
             this.setState({hidden : true});
         }
     },
+    delete: function(event){
+        event.stopPropagation()
+        console.log("Delete");
+    },
     
     render: function() {
         var elapsed = Math.round(this.props.timeLeft / 100);
@@ -36,7 +40,7 @@ var Notification = React.createClass({
         return(
         <div className="list-group-item" onClick={this.show}>
         <h4>{this.props.title}
-            <small> Time left: {seconds} </small>
+            <small> Time left: {seconds} </small> <span className="glyphicon glyphicon-remove delete" onClick={this.delete}></span>
             </h4>
             <div className="facts" id={this.props.nr}>
             <p> <mark> Description: {this.props.descr}</mark> </p>
@@ -59,9 +63,6 @@ var Start = React.createClass({
         $(function () {
             $('#datetimepicker2').datetimepicker({
                 locale: 'sv',
-//                onSelect: function (data) {
-  //                  that.setState({inputDate: data});
-    //            }
             });
         });
     },
@@ -113,15 +114,6 @@ var Start = React.createClass({
         ){
             console.log("valid!");
             return true;
-//            var regExp = new RegExp("^(([0]?[1-9]|1[0-2])-([0-2]?[0-9]|3[0-1])-[1-2]\d{3}) (20|21|22|23|[0-1]?\d{1}):([0-5]?\d{1})$");
-  //          if(date.match(regExp)){
-    //            console.log("truee");
-      //          return true;
-        //    }
-          //  else{
-            //    console.log("falsee");
-              //  return false;
-//            }
         }
         else{
             console.log("Not valid!");
@@ -195,7 +187,6 @@ var Start = React.createClass({
             <span className="glyphicon glyphicon-calendar"></span>
             </span>
             </div>
-{/*            <input type='text' className="form-control" id='datetimepicker2'   onChange={this.dateChange}/>  */}
             </div>
             <div className="form-group">
             <label for="songs">Song:</label>
