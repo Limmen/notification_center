@@ -31,11 +31,14 @@ var Notification = React.createClass({
         event.stopPropagation()
         console.log("Delete");
         var Id = this.props.id;
-        
+        var that = this;
         $.post( "/index/delete",{Id : Id}, function( data ) {
             console.log("deleted!");
-        });
-        
+            that.getNotifications();
+        });        
+    },
+    getNotifications: function(){
+        this.props.getNotifications();
     },
     
     render: function() {
@@ -75,8 +78,15 @@ var Start = React.createClass({
 
     getNotifications: function(){
         var that = this;
+        console.log("Outside getNOti");
         $.get( "/index/notifications", function( data ) {
-            that.setState({notifications : data});
+            console.log("Inside getNOti");
+            if(data.hasOwnProperty('empty')){
+                that.setState({notifications : []});
+            }
+            else{
+                that.setState({notifications : data});   
+            }
         });
     },
     getSongs: function(){
@@ -140,8 +150,10 @@ var Start = React.createClass({
             this.fail();
         }
         this.setState({inputTitle : "", inputDescr : "", inputSongs : ""});
+        var that = this;
         $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
             console.log("posted!");
+            that.getNotifications();
         });
         
     },
@@ -220,7 +232,7 @@ var Start = React.createClass({
                 var descr = note.description;
                 var date = note.date;
                 var song = note.song;
-                return <Notification nr={nr} id={id} title={title} descr={descr} date={date} song={song} timeLeft={this.state.timer}/>
+                return <Notification nr={nr} id={id} title={title} descr={descr} date={date} song={song} timeLeft={this.state.timer} getNotifications={this.getNotifications}/>
             }.bind(this))}
             </div>
             </div>

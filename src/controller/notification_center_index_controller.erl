@@ -13,6 +13,8 @@ notifications('GET', [])->
     Pid = self(),
     {notification_server_worker, event_server@limmen} ! {get_events, Pid},
     receive
+        [] ->
+            {json, [{empty, "true"}]};
         Events ->
             io:format("yo, received events here! ~p ~n ~n",[Events]),
             {json, Events}
