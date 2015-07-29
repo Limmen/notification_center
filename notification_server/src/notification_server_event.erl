@@ -10,8 +10,9 @@
 
 
 start(Event)->
-    spawn(fun()-> event(Event) end),
-    {ok,self()}.
+    Pid = spawn(fun()-> event(Event) end),
+    io:format("Event here, pid is: ~p ~n ~n", [Pid]),
+    {ok,Pid}.
 
 event({notification,Id,Title, DateTime, Descr, Song})->
     io:format("event worker started with this event: ~p ~n ~n", [Title]),

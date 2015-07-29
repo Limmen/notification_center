@@ -75,7 +75,7 @@ handle_cast({remove_event, Id},State)->
     [{Id,Event,Pid}|_] = ets:lookup(events,Id),
     %% Pid = ets:lookup(events,Id),
     io:format("Pid is: ~p ~n ~n ", [Pid]),
-    spawn(fun()->notification_server_eventsup:remove_event(Pid) end),
+    notification_server_eventsup:remove_event(Pid),
     ets:delete(events,Id),
     io:format("Process killed and entry in ETS removed ~n ~n"),
     {noreply,State}.

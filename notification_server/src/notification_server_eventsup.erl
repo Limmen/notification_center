@@ -53,6 +53,7 @@ init([]) ->
                             shutdown = brutal_kill,
                             type = worker,
                             modules = [notification_server_event]},
+
     EventChild = {EventSpec#childspecs.id,
                  EventSpec#childspecs.start,
                  EventSpec#childspecs.restart,
@@ -77,6 +78,7 @@ add_event(Event)->
 
 remove_event(Pid)->
     io:format("eventsup received request to remove a Event. ~n ~n"),
-    supervisor:terminate_child(notification_server_eventsup,Pid).
+    Ret = supervisor:terminate_child(notification_server_eventsup,Pid),
+    io:format("Ret: ~p ~n ~n",[Ret]).
     
     
