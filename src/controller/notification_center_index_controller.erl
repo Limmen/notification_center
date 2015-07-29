@@ -35,3 +35,10 @@ songs('GET', [])->
     Songs = boss_db:find(song, []),
     io:format("~n ~n Noti: ~p  ~n ~n", [Songs]),
     {json, Songs}.   
+
+delete('POST', [])->
+    io:format("yo handling delte req! ~n ~n"),
+    Id = Req:post_param("Id"),
+    {notification_server_worker, event_server@limmen} ! {remove_event,Id},        
+    io:format("Sent message to delete event ~n ~n"),
+    {redirect, [{action, "start"}]}.

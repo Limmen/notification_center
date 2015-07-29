@@ -69,11 +69,14 @@ init([]) ->
 %%====================================================================
 
 add_event(Event)->
-    io:format("eventsup received request to start new Event. Event: ~p ~n ~n", [Event]),
-    supervisor:start_child(notification_server_eventsup,[Event]).
+    io:format("eventsup received request to start new Event. ????Event: ~p ~n ~n", [Event]),
+    {ok,Pid} = supervisor:start_child(notification_server_eventsup,[Event]),
+    io:format("wtf? ~n"),
+    io:format("child PId?! : ~p ~n ~n ", [Pid]),
+    Pid.
 
-remove_event(Id)->
+remove_event(Pid)->
     io:format("eventsup received request to remove a Event. ~n ~n"),
-    supervisor:delete_child(notification_server_eventsup,Id).
+    supervisor:terminate_child(notification_server_eventsup,Pid).
     
     

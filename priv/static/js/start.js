@@ -30,6 +30,12 @@ var Notification = React.createClass({
     delete: function(event){
         event.stopPropagation()
         console.log("Delete");
+        var Id = this.props.id;
+        
+        $.post( "/index/delete",{Id : Id}, function( data ) {
+            console.log("deleted!");
+        });
+        
     },
     
     render: function() {

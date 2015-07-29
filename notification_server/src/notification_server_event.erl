@@ -8,7 +8,12 @@
 %% API
 %%====================================================================
 
-start({notification,Id,Title, DateTime, Descr, Song})->
+
+start(Event)->
+    spawn(fun()-> event(Event) end),
+    {ok,self()}.
+
+event({notification,Id,Title, DateTime, Descr, Song})->
     io:format("event worker started with this event: ~p ~n ~n", [Title]),
     io:format("date of the event: ~p ~n ~n", [DateTime]),
     Date = convert_to_erlang_date(DateTime),
