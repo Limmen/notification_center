@@ -34,9 +34,6 @@ start_link() ->
 %% Child :: {Id,StartFunc,Restart,Shutdown,Type,Modules}
 init([]) ->
 
-    io:format("Root supervisor starting ~n ~n"),
-    
-
     %If child dies more than 1 time per 3 seconds, terminate.
     %one_for_one means that if a child terminates only that child will be restarted, not all.
     Flags = #supflags{strategy = one_for_one, intensity = 1, period = 3},

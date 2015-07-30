@@ -13,24 +13,18 @@ start()->
     listen().
 
 listen()->
-    io:format("listener up and listening ~n ~n"),
     receive
         {new_event, Event} ->
-            io:format("Listener Received newevent! ~n ~n"),
             notification_server_server:spawn_event(Event),
             listen();
         {remove_event, Id} ->
-            io:format("Remove element ~n ~n"),
             notification_server_server:remove_event(Id),
             listen();
         {get_events, From}->
-            io:format("Listener received get events ~n ~n"),
             Events = notification_server_server:get_events(),
-            io:format("listener received events: ~p ~n ~n ", [Events]),
             From ! Events,
             listen();            
         _  -> 
-            io:format("Listener received something random ~n ~n"),
             listen()
                   end.
 

@@ -24,7 +24,6 @@
 
 %% Results in a call to init/1
 start_link() ->
-    io:format("Event supervisor trying to start up ~n ~n"),
     supervisor:start_link({local, ?SERVER}, ?MODULE, []).
 
 
@@ -33,9 +32,6 @@ start_link() ->
 %%====================================================================
 
 init([]) ->
-
-    io:format("Child supervisor starting ~n ~n"),
-    
     
     %simple_one_for_one means that all child processes will be started dynamicly on call to
     %supervisor:start_child/2. 
@@ -70,15 +66,10 @@ init([]) ->
 %%====================================================================
 
 add_event(Event)->
-    io:format("eventsup received request to start new Event. ????Event: ~p ~n ~n", [Event]),
     {ok,Pid} = supervisor:start_child(notification_server_eventsup,[Event]),
-    io:format("wtf? ~n"),
-    io:format("child PId?! : ~p ~n ~n ", [Pid]),
     Pid.
 
 remove_event(Pid)->
-    io:format("eventsup received request to remove a Event. ~n ~n"),
-    Ret = supervisor:terminate_child(notification_server_eventsup,Pid),
-    io:format("Ret: ~p ~n ~n",[Ret]).
+    Ret = supervisor:terminate_child(notification_server_eventsup,Pid).
     
     

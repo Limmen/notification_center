@@ -11,31 +11,25 @@ var Notification = React.createClass({
     },
     componentDidMount: function(){
         var id_div = "#" + this.props.nr;
-        console.log(this.props.nr);
         $(id_div).hide();
     }, 
 
     show: function(event){
         var id_div = "#" + this.props.nr;
-        console.log("Show!");
         if(this.state.hidden){
-            console.log("Showing");
             $(id_div).show();
             this.setState({hidden : false});
         }
         else{
-            console.log("Hiding");
             $(id_div).hide();
             this.setState({hidden : true});
         }
     },
     delete: function(event){
         event.stopPropagation()
-        console.log("Delete");
         var Id = this.props.id;
         var that = this;
         $.post( "/index/delete",{Id : Id}, function( data ) {
-            console.log("deleted!");
             that.getNotifications();
         });        
     },
@@ -46,7 +40,10 @@ var Notification = React.createClass({
         this.eventFired = true;
         var main_id_div = "#" + "main_" + this.props.nr + " .h4_title";
         var id_div = "#" + this.props.nr;
-        $(main_id_div).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).animate({fontSize: '230%'});
+        $(main_id_div).append( $( "<span class='red'>active</span>" ) );
+        setInterval(function(){
+            $(main_id_div).fadeOut(300).fadeIn(300);
+        });
     },
     
     render: function() {
@@ -93,9 +90,7 @@ var Start = React.createClass({
 
     getNotifications: function(){
         var that = this;
-        console.log("Outside getNOti");
         $.get( "/index/notifications", function( data ) {
-            console.log("Inside getNOti");
             if(data.hasOwnProperty('empty')){
                 that.setState({notifications : []});
             }
@@ -152,12 +147,10 @@ var Start = React.createClass({
                 return false;
             }
             else{
-                console.log("valid!");
                 return true;   
             }
         }
         else{
-            console.log("Not valid!");
             return false;
         }
         
@@ -172,7 +165,6 @@ var Start = React.createClass({
             this.success();
             var that = this;
             $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
-                console.log("posted!");
                 that.getNotifications();
             });
             this.setState({inputTitle : "", inputDescr : "", inputSongs : ""});
@@ -183,7 +175,6 @@ var Start = React.createClass({
         
     },
     descrChange: function(e){
-        console.log("DescrChange");
         this.setState({inputDescr : e.target.value});
     },
     titleChange: function(e){
@@ -193,7 +184,6 @@ var Start = React.createClass({
         this.setState({inputSongs : e.target.value});
     },
     dateChange: function(e){
-        console.log("DateChange");
         this.setState({inputDate : e.target.value});
     },
     render: function() {

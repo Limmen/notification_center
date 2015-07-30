@@ -16,7 +16,6 @@
 %%====================================================================
 
 start(_StartType, _StartArgs) ->
-    io:format("notification_server application starting ~n ~n"),
     'notification_server_sup':start_link().
 
 %%--------------------------------------------------------------------
