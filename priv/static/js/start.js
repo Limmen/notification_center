@@ -1,10 +1,12 @@
 
 
 var Notification = React.createClass({
-
+    eventFired: false,
+    
     getInitialState: function() { 
         return{
-            hidden: true
+            hidden: true,
+            seconds: new Date(this.props.date).getTime()/100,
         }
     },
     componentDidMount: function(){
@@ -40,19 +42,31 @@ var Notification = React.createClass({
     getNotifications: function(){
         this.props.getNotifications();
     },
+    highlight : function(){
+        this.eventFired = true;
+        var main_id_div = "#" + "main_" + this.props.nr + " .h4_title";
+        var id_div = "#" + this.props.nr;
+        $(main_id_div).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).animate({fontSize: '230%'});
+    },
     
     render: function() {
-        var elapsed = Math.round(this.props.timeLeft / 100);
-
+        var id = "main_" + this.props.nr;
+        var elapsed = Math.round(this.state.seconds - this.props.timeLeft/100);
+        if(elapsed < 0){
+            elapsed = 0;
+            if(this.eventFired === false){
+                this.highlight();
+            }
+        }
         // This will give a number with one digit after the decimal dot (xx.x):
         var seconds = (elapsed / 10).toFixed(1);    
         return(
-        <div className="list-group-item" onClick={this.show}>
-        <h4>{this.props.title}
+        <div className="list-group-item" id={id} onClick={this.show}>
+        <h4 className="h4_title">{this.props.title}
             <small> Time left: {seconds} </small> <span className="glyphicon glyphicon-remove delete" onClick={this.delete}></span>
             </h4>
             <div className="facts" id={this.props.nr}>
-            <p> <mark> Description: {this.props.descr}</mark> </p>
+            <p><i>Description: {this.props.descr}</i></p>
             <p><i> Date: {this.props.date} </i></p>
             <p> <i>Song: {this.props.song} </i></p>
             </div>
@@ -64,7 +78,8 @@ var Notification = React.createClass({
 var Start = React.createClass({
 
     tick: function(){
-        this.setState({timer: new Date() - this.props.start});
+//        this.setState({timer: new Date() - this.props.start});
+        this.setState({timer: Date.now()});
     },
 
     dateT: function(){
