@@ -100,6 +100,10 @@ var Start = React.createClass({
                 that.setState({notifications : []});
             }
             else{
+                data.sort(function(a, b){
+                    var res = new Date(a).getTime()/1000 - new Date(b).getTime()/1000
+                    return res;
+                })
                 that.setState({notifications : data});   
             }
         });
@@ -143,8 +147,14 @@ var Start = React.createClass({
             (typeof(title) !== "undefined" && title !== null && title !== "") &&
             (typeof(date) !== "undefined" && date !== null && date !== "")
         ){
-            console.log("valid!");
-            return true;
+            var diff = new Date(date).getTime()/1000 - Date.now()/1000;
+            if(diff < 0 ){
+                return false;
+            }
+            else{
+                console.log("valid!");
+                return true;   
+            }
         }
         else{
             console.log("Not valid!");
@@ -160,16 +170,16 @@ var Start = React.createClass({
         var bool = this.validate(title,dateTime);
         if(bool){
             this.success();
+            var that = this;
+            $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
+                console.log("posted!");
+                that.getNotifications();
+            });
+            this.setState({inputTitle : "", inputDescr : "", inputSongs : ""});
         }
         else{
             this.fail();
         }
-        this.setState({inputTitle : "", inputDescr : "", inputSongs : ""});
-        var that = this;
-        $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
-            console.log("posted!");
-            that.getNotifications();
-        });
         
     },
     descrChange: function(e){
@@ -234,7 +244,7 @@ var Start = React.createClass({
             </div>            
             <button type="submit" className="btn btn-default" onClick={this.newEvent}>Submit</button>
             <div id="success" className="alert alert-success" role="alert"><strong>Event successfully saved</strong></div>
-            <div id="fail" className="alert alert-danger" role="alert"><strong>Error, please check that you wrote correct parameters</strong></div>
+            <div id="fail" className="alert alert-danger" role="alert"><strong>Error, please check that you entered valid parameters. You can not set a date in the past</strong></div>
             </div>
             
             <div className="col-sm-5">
