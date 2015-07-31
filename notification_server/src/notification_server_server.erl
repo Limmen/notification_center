@@ -37,13 +37,20 @@ stop()->
 %% New ets set-table is created for the servers internal state.
 %% Primary key defaults to first position in every element (tuple).
 init([])->
-    Table = ets:new(events, [set, named_table]),
-    {ok, Table}.
+    Events = ets:new(events, [set, named_table]),
+    List_of_songs = os:cmd("\ls songs/ | grep .mp3$"),
+    Songs = ets:new(songs, [set, named_table]),
+    update_songs(List_of_songs),
+    {ok, {Events, Songs}}.
 
 %% Expected to return {reply, Reply, NewState}
 handle_call({get_events},From,State)->
     Events = ets:foldl(fun({Id,Event,Pid}, A)-> [Event|A]  end, [], events),
-    {reply, Events, State}.
+    {reply, Events, State};
+
+handle_call({get_songs},From,State)->
+    Songs = ets:foldl(fun(Song, A)-> [Song|A]  end, [], songs),
+    {reply, Songs, State}.
 
 %% Expected to return {noreply, NewState}
 handle_cast({new_event,{Title,DateTime,Description,Song}},State)->
@@ -87,3 +94,26 @@ remove_event(Id)->
 
 get_events()->
     gen_server:call(?MODULE, {get_events}).
+
+update_songs(Songs)->
+    update_songs(Songs, []).
+
+update_songs([], [])->
+    ok;
+
+update_songs([], Song)->
+    io:format("~p inserted! ~n ~n", [Song]),
+    ets:insert(songs, {Song});
+
+update_songs([10|Songs],Song)->
+    io:format("~p inserted! ~n ~n", [Song]),
+    ets:insert(songs, {Song}),
+    update_songs(Songs, []);
+
+update_songs([H|T], Song) ->
+    io:format("H is : ~p , Song is : ~p ~n ~n", [H, Song]),
+    update_songs(T, Song ++ [H]).
+
+    
+
+    

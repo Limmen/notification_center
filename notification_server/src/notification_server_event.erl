@@ -17,7 +17,7 @@ event({notification,Id,Title, DateTime, Descr, Song})->
     Date = convert_to_erlang_date(DateTime),
     {Days, Time} = calendar:time_difference(calendar:local_time(),Date),
     SecondsLeft = convert_to_seconds({Days,Time}),
-    tick(SecondsLeft).
+    tick(SecondsLeft, {Title, Song}).
     %% timer:apply_after(SecondsLeft, ?MODULE, time_is_up, []).
     %% receive
     %%     _ ->
@@ -47,13 +47,18 @@ convert_to_seconds({Days,Time},Acc) ->
     convert_to_seconds({Days-1,Time},Acc+86400).
 
 
-tick(Time) when Time >= 0 ->
+tick(Time, _) when Time < 0 ->
+    exit("Invalid date");
+
+tick(Time, Event) when Time >= 0 ->
     timer:sleep(1000),
-    tick(Time-1);
+    tick(Time-1, Event);
 
-tick(_StartTime) ->
-    time_is_up().
+tick(0, Event) ->
+    time_is_up(Event).
 
 
-time_is_up()->
+time_is_up({Title, Song})->
+    os:cmd("espeak wakeup"),
+    os:cmd("mpg123" ++ Song),
     ok.
