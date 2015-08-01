@@ -70,6 +70,7 @@ add_event(Event)->
     Pid.
 
 remove_event(Pid)->
+    os:cmd("pkill mpg123"),
     Ret = supervisor:terminate_child(notification_server_eventsup,Pid).
     
     

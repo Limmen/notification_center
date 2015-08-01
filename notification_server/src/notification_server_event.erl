@@ -47,18 +47,26 @@ convert_to_seconds({Days,Time},Acc) ->
     convert_to_seconds({Days-1,Time},Acc+86400).
 
 
-tick(Time, _) when Time < 0 ->
-    exit("Invalid date");
-
 tick(Time, Event) when Time >= 0 ->
     timer:sleep(1000),
     tick(Time-1, Event);
 
-tick(0, Event) ->
+tick(_StartTime, Event) ->
     time_is_up(Event).
 
 
 time_is_up({Title, Song})->
-    os:cmd("espeak wakeup"),
-    os:cmd("mpg123" ++ Song),
-    ok.
+    os:cmd("espeak " ++ Title ),
+    spawn(fun()-> os:cmd("mpg123 songs/'" ++ Song ++ "'") end),
+    loop({Title,Song}, 100).
+
+
+loop({Title,Song}, 0)->
+    spawn(fun()-> os:cmd("mpg123 songs/'" ++ Song ++ "'") end),
+    loop({Title,Song}, 100);
+
+loop({Title,Song}, RestartSong)->
+    os:cmd("espeak " ++ Title),
+    timer:sleep(3000),
+    loop({Title,Song}, RestartSong-1).
+    
