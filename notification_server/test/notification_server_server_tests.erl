@@ -34,3 +34,8 @@ handle_info_test()->
     ?_assertMatch({noreply, _}, notification_server_server:handle_info([],[])).
 
 
+get_events_test()->
+    ?_assert(is_list(notification_server_server:get_events())).
+
+get_songs_test()->
+    ?_assert(is_list(notification_server_server:get_songs())).
