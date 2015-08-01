@@ -1,5 +1,5 @@
 -module(notification_server_event).
-
+-compile(export_all).
 %% API
 -export([start/1]).
 

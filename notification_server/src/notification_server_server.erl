@@ -25,8 +25,12 @@ start_link()->
     gen_server:start_link({local, notification_server_server}, notification_server_server, [], []).
 
 %%Results in a call to terminate/2
+%% Should return a tuple {stop,normal,State1} 
+%% where normal specifies that it is a normal termination 
+%% State1 is a new value for the state of the gen_server. 
+%% This causes the gen_server to call terminate(normal, State1) and then it terminates gracefully.
 stop()->
-    gen_server:stop().
+    {stop, normal, []}.
 
 
 %%====================================================================
