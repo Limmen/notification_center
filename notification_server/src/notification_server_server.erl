@@ -50,7 +50,6 @@ handle_call({get_events},From,State)->
 
 handle_call({get_songs},From,State)->
     Songs = ets:foldl(fun(Song, A)-> [Song|A]  end, [], songs),
-    io:format("fold songs: ~p ~n ~n", [Songs]),
     {reply, Songs, State}.
 
 %% Expected to return {noreply, NewState}
