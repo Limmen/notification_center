@@ -24,6 +24,10 @@ listen()->
             Events = notification_server_server:get_events(),
             From ! Events,
             listen();            
+        {get_songs, From}->
+            Songs = notification_server_server:get_songs(),
+            From ! Songs,
+            listen();            
         _  -> 
             listen()
                   end.

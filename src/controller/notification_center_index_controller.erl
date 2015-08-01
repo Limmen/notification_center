@@ -28,8 +28,21 @@ create('POST', [])->
 
 
 songs('GET', [])->
-    Songs = boss_db:find(song, []),
-    {json, Songs}.   
+    Pid = self(),
+    {notification_server_worker, event_server@limmen} ! {get_songs, Pid},
+    receive
+        [] ->
+            io:format("empty songs ~n ~n"),
+            {json, [{empty, "true"}]};
+        Songs ->
+            io:format("received songs: ~p  ~n ~n", [Songs]),
+            {json, Songs}
+    after 3000 ->
+            {json, []}
+    end.
+    %% Songs2 = boss_db:find(song, []),
+    %% io:format("Songs syntax: ~p ~n ~n", [Songs2] ),
+    %% {json, Songs2}.   
 
 delete('POST', [])->
     Id = Req:post_param("Id"),

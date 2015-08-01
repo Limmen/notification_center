@@ -227,8 +227,7 @@ var Start = React.createClass({
             <option> </option>
             {this.state.songs.map(function(song) {
                 var name = song.name;
-                var artist = song.artist;
-                return <option>{name} - {artist}</option>
+                return <option>{name}</option>
             }.bind(this))}
             </select>
             </div>            

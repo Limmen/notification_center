@@ -9,7 +9,7 @@
 -export([start_link/0, stop/0]).
 
 %%Internal functions
--export([spawn_event/1, remove_event/1, get_events/0]).
+-export([spawn_event/1, remove_event/1, get_events/0, get_songs/0]).
 
 
 %%====================================================================
@@ -39,7 +39,7 @@ stop()->
 init([])->
     Events = ets:new(events, [set, named_table]),
     List_of_songs = os:cmd("\ls songs/ | grep .mp3$"),
-    Songs = ets:new(songs, [set, named_table]),
+    Songs = ets:new(songs, [set, named_table, {keypos, 2}]),
     update_songs(List_of_songs),
     {ok, {Events, Songs}}.
 
@@ -50,6 +50,7 @@ handle_call({get_events},From,State)->
 
 handle_call({get_songs},From,State)->
     Songs = ets:foldl(fun(Song, A)-> [Song|A]  end, [], songs),
+    io:format("fold songs: ~p ~n ~n", [Songs]),
     {reply, Songs, State}.
 
 %% Expected to return {noreply, NewState}
@@ -95,6 +96,10 @@ remove_event(Id)->
 get_events()->
     gen_server:call(?MODULE, {get_events}).
 
+get_songs()->
+    gen_server:call(?MODULE, {get_songs}).
+
+
 update_songs(Songs)->
     update_songs(Songs, []).
 
@@ -102,16 +107,13 @@ update_songs([], [])->
     ok;
 
 update_songs([], Song)->
-    io:format("~p inserted! ~n ~n", [Song]),
-    ets:insert(songs, {Song});
+    ets:insert(songs, {song, Song});
 
 update_songs([10|Songs],Song)->
-    io:format("~p inserted! ~n ~n", [Song]),
-    ets:insert(songs, {Song}),
+    ets:insert(songs, {song, Song}),
     update_songs(Songs, []);
 
 update_songs([H|T], Song) ->
-    io:format("H is : ~p , Song is : ~p ~n ~n", [H, Song]),
     update_songs(T, Song ++ [H]).
 
     
