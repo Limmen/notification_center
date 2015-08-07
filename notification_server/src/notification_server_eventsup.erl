@@ -14,8 +14,7 @@
 -define(SERVER, ?MODULE).
 
 %% Records
--record(supflags, {strategy, intensity, period}).
--record(childspecs, {id, start, restart, shutdown, type, modules}).
+-include("my_records.hrl").
 
 
 %%====================================================================
