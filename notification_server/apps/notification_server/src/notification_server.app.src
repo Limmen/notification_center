@@ -1,0 +1,18 @@
+{application, 'notification_server',
+ [{description, "Server application for events"},
+  {vsn, "0.1.0"},
+  {registered, [notification_server_worker]},
+%%Defines callback module for the application. 
+%%This tells OTP that it should call CallbackMod:start(normal, Args). to start the app.
+  {mod, {'notification_server_app', []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, [notification_server_event, notification_server_eventsup, notification_server_listener, notification_server_app, notification_server_server, notification_server_sup]},
+
+  {contributors, []},
+  {licenses, []},
+  {links, []}
+ ]}.

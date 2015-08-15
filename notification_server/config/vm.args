@@ -1,0 +1,8 @@
+# only show the programmed prompt
+-noshell
+
+# for remote access & debugging
+-name event_server@limmen
+
+#cookie
+-setcookie event

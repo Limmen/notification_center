@@ -1,0 +1,6 @@
+%% encoding: UTF-8
+{application,notification_server}.
+{packages,[]}.
+{modules,[notification_server_app,notification_server_event,
+          notification_server_eventsup,notification_server_listener,
+          notification_server_server,notification_server_sup]}.
