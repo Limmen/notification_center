@@ -7,7 +7,8 @@ urls() -> [
       {"^delete/?$", delete},
       {"^notifications/?$", notifications},
       {"^songs/?$", songs},
-      {"^create/?$", create}
+      {"^create/?$", create},
+      {"^delete/?$", delete}
     ].
 
 
@@ -15,7 +16,10 @@ handle_json(Req)->
     Req:ok({"application/json",[], mochijson2:encode([{struct, [{strKey, <<"delete!">>}, {intKey, 10}, {arrayKey, [1, 2, 3]}]}, {struct, [{strKey, <<"delete!">>}, {intKey, 10}, {arrayKey, [1, 2, 3]}]}])}).
 
 handle_delete(Req)->
-    Req:ok({"application/json",[], mochijson2:encode({struct, [{strKey, <<"delete!">>}, {intKey, 10}, {arrayKey, [1, 2, 3]}]})}).
+    PostData = Req:parse_post(),
+    Id = proplists:get_value("Id", PostData, "null"),
+    {notification_server_worker, event_server@limmen} ! {remove_event,Id},        
+    index.
 
 handle_notifications(Req)->
     io:format("Inside handle_notifications"),
