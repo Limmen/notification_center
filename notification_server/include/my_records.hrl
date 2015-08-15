@@ -1,2 +1,0 @@
--record(supflags, {strategy, intensity, period}).
--record(childspecs, {id, start, restart, shutdown, type, modules}).
