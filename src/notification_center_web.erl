@@ -67,7 +67,6 @@ loop(Req, DocRoot) ->
                         Req:not_found()
                 end;
             index ->
-                io:format("index matched! ~n"),
                 Req:serve_file("", DocRoot);
             Response -> 
                 Response
