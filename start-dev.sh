@@ -1,5 +1,5 @@
 #!/bin/sh
-exec notification_server/_build/default/rel/notification_server/bin/notification_server &
+exec notification_server/release/_build/default/rel/notification_server/bin/notification_server &
 exec erl \
     -pa ebin deps/*/ebin \
     -boot start_sasl \
