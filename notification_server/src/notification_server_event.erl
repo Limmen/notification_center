@@ -13,17 +13,11 @@ start(Event)->
     Pid = spawn(fun()-> event(Event) end),
     {ok,Pid}.
 
-event({notification,Id,Title, DateTime, Descr, Song})->
-    Date = convert_to_erlang_date(DateTime),
+event({struct, [{id, Id},{title, Title},{date, DateTime}, {description, Description},{song, Song}]})->
+    Date = convert_to_erlang_date(binary:bin_to_list(DateTime)),
     {Days, Time} = calendar:time_difference(calendar:local_time(),Date),
     SecondsLeft = convert_to_seconds({Days,Time}),
-    tick(SecondsLeft, {Title, Song}).
-    %% timer:apply_after(SecondsLeft, ?MODULE, time_is_up, []).
-    %% receive
-    %%     _ ->
-    %%         ok
-    %%             end.
-
+    tick(SecondsLeft, {binary:bin_to_list(Title), binary:bin_to_list(Song)}).
 
 %%====================================================================
 %% Internal functions

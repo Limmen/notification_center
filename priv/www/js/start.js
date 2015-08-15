@@ -29,7 +29,7 @@ var Notification = React.createClass({
         event.stopPropagation()
         var Id = this.props.id;
         var that = this;
-        $.post( "/index/delete",{Id : Id}, function( data ) {
+        $.post( "/delete",{Id : Id}, function( data ) {
             that.getNotifications();
         });        
     },
@@ -90,7 +90,7 @@ var Start = React.createClass({
 
     getNotifications: function(){
         var that = this;
-        $.get( "/index/notifications", function( data ) {
+        $.get( "/notifications", function( data ) {
             if(data.hasOwnProperty('empty')){
                 that.setState({notifications : []});
             }
@@ -105,7 +105,7 @@ var Start = React.createClass({
     },
     getSongs: function(){
         var that = this;
-        $.get( "/index/songs", function( data ) {
+        $.get( "/songs", function( data ) {
             that.setState({songs : data});
         });
     },
@@ -164,7 +164,7 @@ var Start = React.createClass({
         if(bool){
             this.success();
             var that = this;
-            $.post( "/index/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
+            $.post( "/create",{title : title, description : descr, date: dateTime, song: song}, function( data ) {
                 that.getNotifications();
             });
             this.setState({inputTitle : "", inputDescr : "", inputSongs : ""});
@@ -226,8 +226,8 @@ var Start = React.createClass({
             <select className="form-control" id="songs" value={this.state.inputSongs} onChange={this.songsChange}>
             <option> </option>
             {this.state.songs.map(function(song) {
-                var name = song.name;
-                return <option>{name}</option>
+//                var name = song.name;
+                return <option>{song}</option>
             }.bind(this))}
             </select>
             </div>            

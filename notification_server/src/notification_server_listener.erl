@@ -15,6 +15,7 @@ start()->
 listen()->
     receive
         {new_event, Event} ->
+            io:format("Receieved new event signal!"),
             notification_server_server:spawn_event(Event),
             listen();
         {remove_event, Id} ->

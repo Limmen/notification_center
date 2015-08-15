@@ -1,2 +1,0 @@
--module(notification, [Id, Title, Date, Description, Song]).
--compile(export_all).

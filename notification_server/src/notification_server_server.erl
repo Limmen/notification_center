@@ -43,7 +43,7 @@ stop()->
 init([])->
     Events = ets:new(events, [set, named_table]),
     List_of_songs = os:cmd("\ls songs/ | grep .mp3$"),
-    Songs = ets:new(songs, [set, named_table, {keypos, 2}]),
+    Songs = ets:new(songs, [set, named_table]),
     update_songs(List_of_songs),
     {ok, {Events, Songs}}.
 
@@ -53,7 +53,7 @@ handle_call({get_events},From,State)->
     {reply, Events, State};
 
 handle_call({get_songs},From,State)->
-    Songs = ets:foldl(fun(Song, A)-> [Song|A]  end, [], songs),
+    Songs = ets:foldl(fun({Song}, A)-> [Song|A]  end, [], songs),
     {reply, Songs, State}.
 
 %% Expected to return {noreply, NewState}
@@ -61,7 +61,7 @@ handle_cast({new_event,{Title,DateTime,Description,Song}},State)->
     {Date, {Hr, Min, Sec}} = calendar:local_time(),
     Milliseconds = integer_to_list(timer:seconds(Hr + Min + Sec)),
     Id = Title ++ "_" ++ Milliseconds,
-    Event = {notification,Id,Title,DateTime,Description,Song},
+    Event = {struct, [{id, list_to_binary(Id)},{title,list_to_binary(Title)},{date, list_to_binary(DateTime)}, {description, list_to_binary(Description)},{song, list_to_binary(Song)}]},
     Pid = notification_server_eventsup:add_event(Event),
     ets:insert(events,{Id, Event, Pid}),
     {noreply,State};
@@ -109,11 +109,11 @@ update_songs(Songs)->
 update_songs([], [])->
     ok;
 
-update_songs([], Song)->
-    ets:insert(songs, {song, Song});
+update_songs([], Song) when Song =/= []->
+    ets:insert(songs, {list_to_binary(Song)});
 
-update_songs([10|Songs],Song)->
-    ets:insert(songs, {song, Song}),
+update_songs([10|Songs],Song) when Song =/= []->
+    ets:insert(songs, {list_to_binary(Song)}),
     update_songs(Songs, []);
 
 update_songs([H|T], Song) ->

@@ -1,0 +1,10 @@
+{application,notification_center,
+             [{description,"notification_center"},
+              {vsn,"0.1"},
+              {modules,[notification_center,notification_center_app,
+                        notification_center_deps,notification_center_sup,
+                        notification_center_views,notification_center_web]},
+              {registered,[]},
+              {mod,{notification_center_app,[]}},
+              {env,[]},
+              {applications,[kernel,stdlib,crypto]}]}.

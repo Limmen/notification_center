@@ -1,29 +1,23 @@
-REBAR := ./rebar
+PREFIX:=../
+DEST:=$(PREFIX)$(PROJECT)
 
-all: get-deps compile compile-app
+REBAR=./rebar
 
-get-deps:
-	$(REBAR) get-deps
+.PHONY: all edoc test clean build_plt dialyzer app
 
-compile:
-	$(REBAR) compile
+all:
+	@$(REBAR) prepare-deps
 
-compile-app:
-	$(REBAR) boss c=compile
+edoc: all
+	@$(REBAR) doc
 
-help:
-	@echo 'Makefile for your chicagoboss app                                      '
-	@echo '                                                                       '
-	@echo 'Usage:                                                                 '
-	@echo '   make help                        displays this help text            '
-	@echo '   make get-deps                    updates all dependencies           '
-	@echo '   make compile                     compiles dependencies              '
-	@echo '   make compile-app                 compiles only your app             '
-	@echo '                                    (so you can reload via init.sh)    '
-	@echo '   make all                         get-deps compile compile-app       '
-	@echo '                                                                       '
-	@echo 'DEFAULT:                                                               '
-	@echo '   make all                                                            '
-	@echo '                                                                       '
+test:
+	@rm -rf .eunit
+	@mkdir -p .eunit
+	@$(REBAR) eunit
 
-.PHONY: all get-deps compile compile-app help
+clean:
+	@$(REBAR) clean
+
+app:
+	@$(REBAR) -r create template=mochiwebapp dest=$(DEST) appid=$(PROJECT)

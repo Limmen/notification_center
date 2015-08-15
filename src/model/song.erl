@@ -1,2 +1,0 @@
--module(song, [Name]).
--compile(export_all).

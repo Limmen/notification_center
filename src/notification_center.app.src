@@ -1,8 +1,9 @@
-{application, notification_center, [
-        {description, "My Awesome Web Framework"},
-        {vsn, "0.0.1"},
-        {modules, []},
-        {registered, []},
-        {applications, [kernel, stdlib, crypto]},
-        {env, []}
-    ]}.
+%% -*- erlang -*-
+{application, notification_center,
+ [{description, "notification_center"},
+  {vsn, "0.1"},
+  {modules, []},
+  {registered, []},
+  {mod, {'notification_center_app', []}},
+  {env, []},
+  {applications, [kernel, stdlib, crypto]}]}.
