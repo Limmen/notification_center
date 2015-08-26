@@ -50,7 +50,7 @@ tick(_StartTime, Event) ->
 
 
 time_is_up({Title, Song})->
-    os:cmd("espeak " ++ Title ),
+    os:cmd("espeak " ++ "'" ++ Title ++ "'" ),
     spawn(fun()-> os:cmd("mpg123 songs/'" ++ Song ++ "'") end),
     loop({Title,Song}, 100).
 
@@ -60,7 +60,7 @@ loop({Title,Song}, 0)->
     loop({Title,Song}, 100);
 
 loop({Title,Song}, RestartSong)->
-    os:cmd("espeak " ++ Title),
+    os:cmd("espeak " ++ "'" ++ Title ++ "'" ),
     timer:sleep(3000),
     loop({Title,Song}, RestartSong-1).
     
