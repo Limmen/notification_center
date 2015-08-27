@@ -7,6 +7,7 @@ var Notification = React.createClass({
         return{
             hidden: true,
             seconds: new Date(this.props.date).getTime()/100,
+            rnd: this.makeid()
         }
     },
     componentDidMount: function(){
@@ -26,19 +27,31 @@ var Notification = React.createClass({
         }
     },
     delete: function(event){
-        event.stopPropagation()
+        event.stopPropagation();
+        var id_div = "#" + this.state.rnd;
+        $(id_div).hide();
         var Id = this.props.id;
         var that = this;
         $.post( "/delete",{Id : Id}, function( data ) {
             that.getNotifications();
         });        
     },
+    makeid: function()
+    {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for( var i=0; i < 5; i++ )
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+    },
     getNotifications: function(){
         this.props.getNotifications();
     },
     highlight : function(){
         this.eventFired = true;
-        var main_id_div = "#" + "main_" + this.props.nr + " .h4_title";
+        var main_id_div ="#" + this.state.rnd + " .h4_title";
         var id_div = "#" + this.props.nr;
         $(main_id_div).append( $( "<span class='red'>active</span>" ) );
         setInterval(function(){
@@ -47,18 +60,17 @@ var Notification = React.createClass({
     },
     
     render: function() {
-        var id = "main_" + this.props.nr;
-        var elapsed = Math.round(this.state.seconds - this.props.timeLeft/100);
+        var elapsed = Math.round(new Date(this.props.date).getTime()/100 - this.props.timeLeft/100);
         if(elapsed < 0){
             elapsed = 0;
-            if(this.eventFired === false){
+            if(this.eventFired === false){                
                 this.highlight();
             }
         }
         // This will give a number with one digit after the decimal dot (xx.x):
         var seconds = (elapsed / 10).toFixed(1);    
         return(
-        <div className="list-group-item" id={id} onClick={this.show}>
+        <div className="list-group-item" id={this.state.rnd} onClick={this.show}>
         <h4 className="h4_title">{this.props.title}
             <small> Time left: {seconds} </small> <span className="glyphicon glyphicon-remove delete" onClick={this.delete}></span>
             </h4>
@@ -75,7 +87,6 @@ var Notification = React.createClass({
 var Start = React.createClass({
 
     tick: function(){
-//        this.setState({timer: new Date() - this.props.start});
         this.setState({timer: Date.now()});
     },
 
