@@ -2,7 +2,7 @@
 -noshell
 
 # for remote access & debugging
--name event_server@limmen
+-sname event_server@limmen
 
 #cookie
 -setcookie event

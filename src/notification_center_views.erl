@@ -49,7 +49,7 @@ handle_notifications(Req)->
         Events ->
             Req:ok({"application/json", [], mochijson2:encode(Events)})
     after 3000 ->
-            Req:ok({"application/json", [], mochijson2:encode({struct, [{empty, <<"true">>}]})})
+            Req:ok({"application/json", [], mochijson2:encode({struct, [{empty, <<"false">>}]})})
     end.
 
 handle_songs(Req)->
@@ -61,7 +61,7 @@ handle_songs(Req)->
         Songs ->
             Req:ok({"application/json", [], mochijson2:encode(Songs)})
     after 3000 ->
-            Req:ok({"application/json", [], mochijson2:encode({struct, [{empty, <<"true">>}]})})
+            Req:ok({"application/json", [], mochijson2:encode({struct, [{empty, <<"false">>}]})})
     end.
 
 handle_create(Req)->
